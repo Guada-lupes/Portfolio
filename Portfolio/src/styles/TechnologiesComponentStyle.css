@@ -1,0 +1,15 @@
+.technologies-container{
+    display: flex;
+    width: fit-content;
+    gap: 10px;
+    justify-content: space-evenly;
+    margin-top: 12.5px;
+}
+.technologies-logo{
+border: solid;
+    padding: 5px;
+    border-radius: 5px;
+}
+.technologies-title{
+
+}

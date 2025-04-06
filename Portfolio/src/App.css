@@ -2,5 +2,6 @@
   display:flex;
   flex-direction:column;
   justify-content:space-between;
-  height: 100vh;
+  height: auto;
+  background-image: linear-gradient(#ffddd2, #edf6f9);
 }

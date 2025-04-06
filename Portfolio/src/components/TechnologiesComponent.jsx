@@ -1,8 +1,40 @@
-import React from 'react'
+import React from "react";
+import "../styles/TechnologiesComponentStyle.css";
 
 export const TechnologiesComponent = () => {
   return (
-    <div className='home-technologies-container'>
-        <p>html, css, Sass, JavaScript, Node.js, React, Git, GitHub, Vite</p></div>
-  )
-}
+    <section className="technologies-section">
+    <h3 className="technologies-title">Tecnologías</h3>
+    <div className="technologies-container">
+      
+      <div className="technologies-logo">
+        <p>HTML</p>
+      </div>
+      <div className="technologies-logo">
+        <p>CSS</p>
+      </div>
+      <div className="technologies-logo">
+        <p>Sass</p>
+      </div>
+      <div className="technologies-logo">
+        <p>JavaScript</p>
+      </div>
+      <div className="technologies-logo">
+        <p>React</p>
+      </div>
+      <div className="technologies-logo">
+        <p>Git</p>
+      </div>
+      <div className="technologies-logo">
+        <p>GitHub</p>
+      </div>
+      <div className="technologies-logo">
+        <p>Vite</p>
+      </div>
+      <div className="technologies-logo">
+        <p>Node.js</p>
+      </div>
+    </div>
+    </section>
+  );
+};

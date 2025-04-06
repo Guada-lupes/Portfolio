@@ -1,21 +1,30 @@
-import React from 'react'
+import React from "react";
+import "../styles/WorkComponentStyle.css";
 
 export const WorkComponent = () => {
   return (
-    <div className='home-work-container'>
-        <h2>Trabajo realizados</h2>
-        <div className='work-item'><h3>BookSpace</h3>
-        <img src="" alt="" />
-        <p>enlace</p>
-        <p>descripción</p></div>
-        <div className='work-item'><h3>Asistente de Cata</h3>
-        <img src="" alt="" />
-        <p>enlace</p>
-        <p>descripción</p></div>
-        <div className='work-item'><h3>Shop</h3>
-        <img src="" alt="" />
-        <p>enlace</p>
-        <p>descripción</p></div>
-    </div>
-  )
-}
+    <section className="work-section">
+      <h3 className="work-title">Proyectos realizados</h3>
+      <div className="home-work-container">
+        <div className="work-item">
+          <h4>BookSpace</h4>
+          <img src="" alt="" />
+          <p>enlace</p>
+          <p>descripción</p>
+        </div>
+        <div className="work-item">
+          <h4>Asistente de Cata</h4>
+          <img src="" alt="" />
+          <p>enlace</p>
+          <p>descripción</p>
+        </div>
+        <div className="work-item">
+          <h4>Shop</h4>
+          <img src="" alt="" />
+          <p>enlace</p>
+          <p>descripción</p>
+        </div>
+      </div>
+    </section>
+  );
+};

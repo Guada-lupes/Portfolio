@@ -1,4 +1,6 @@
 .home-page-section{
-    background-color: #edf6f9;
     height: 100vh;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
 }

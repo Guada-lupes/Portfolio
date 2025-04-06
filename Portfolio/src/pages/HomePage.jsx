@@ -1,19 +1,17 @@
 import React from 'react'
 import "../styles/HomePageStyle.css"
-import { PresentationComponent } from '../components/PresentationComponent'
-import { AboutMeComponenet } from '../components/AboutMeComponenet'
 import { TechnologiesComponent } from '../components/TechnologiesComponent'
 import { WorkComponent } from '../components/WorkComponent'
 import { StudiesComponent } from "../components/StudiesComponent"
+import { ExperienceComponent } from '../components/ExperienceComponent'
 
 export const HomePage = () => {
   return (
-    <section className='home-page-section'>
-<PresentationComponent/>
-<AboutMeComponenet/>
+    <main className='home-page-section'>
 <TechnologiesComponent/>
 <WorkComponent/>
 <StudiesComponent/>
-    </section>
+<ExperienceComponent/>
+    </main>
   )
 }

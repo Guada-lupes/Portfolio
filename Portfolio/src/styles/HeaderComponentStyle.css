@@ -4,6 +4,7 @@ color oscuro: #006d77 #e29578 */
 
 
 .header{
-    background-color: #83c5be;
-    height: 10vh;
+    padding-top: 20px;
+    width: 80%;
+    margin: auto;
 }
