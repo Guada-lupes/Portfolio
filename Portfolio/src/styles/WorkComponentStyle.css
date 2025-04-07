@@ -1,9 +1,19 @@
+.work-section{
+    margin-top: 1.3rem;
+}
 .work-title{
 
 }
-.home-work-container{
+.work-item-img{
+    padding: 0.5rem
+}
+.work-item{
+    margin-bottom: 1rem;
+    border: 0.1rem solid #83c5be;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    background-color: white;
+    flex: 0 0 auto;
+    width: 250px;
+}
 
-}
-.work-section{
-    margin-top: 12.5px;
-}

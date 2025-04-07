@@ -1,6 +1,6 @@
 import React from 'react'
 import { PresentationComponent } from './PresentationComponent'
-import { AboutMeComponenet } from "./AboutMeComponenet"
+import { SocialProfilesComponent } from './SocialProfilesComponent'
 import "../styles/HeaderComponentStyle.css"
 
 
@@ -8,7 +8,7 @@ export const HeaderComponent = () => {
   return (
     <header className='header'>
       <PresentationComponent/>
-      <AboutMeComponenet/>
+      <SocialProfilesComponent/>
     </header>
   )
 }

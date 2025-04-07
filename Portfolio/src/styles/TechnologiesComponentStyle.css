@@ -1,6 +1,9 @@
+.technologies-section{
+    margin-top: 1.3rem;
+}
 .technologies-container{
-    display: flex;
-    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     justify-content: space-evenly;
     margin-top: 12.5px;
@@ -9,6 +12,13 @@
 border: solid;
     padding: 5px;
     border-radius: 5px;
+    border: 0.05rem, solid, #006d77;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #83c5be;
+}
+.technologies-logo > p{
+    text-align: center;
 }
 .technologies-title{
 

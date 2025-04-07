@@ -1,6 +1,7 @@
 .home-page-section{
-    height: 100vh;
-    width: 80%;
+    /* height: 100vh; */
+    width: 90%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 1.5rem;    padding: 1rem;
+    border-radius: 0.5rem;
 }
