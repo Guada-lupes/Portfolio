@@ -11,10 +11,10 @@ import { CarruselComponent } from "./CarruselComponent";
 export const WorkComponent = () => {
   return (
     <section className="work-section">
-      <h3 className="work-title">Proyectos realizados</h3>
+      <h2 className="work-title">Proyectos realizados</h2>
       <CarruselComponent>
       <div className="work-item">
-          <h4>BookSpace</h4>
+          <h3>BookSpace</h3>
           <div className="work-item-img">
           <img src={foto1} alt="imagen de proyecto BookSpaceApp" />
           </div>
@@ -22,7 +22,7 @@ export const WorkComponent = () => {
           <DescriptionComponent text="holahola"/> 
         </div>
         <div className="work-item">
-          <h4>Tienda React</h4>
+          <h3>Tienda React</h3>
           <div className="work-item-img">
           <img src={foto2} alt="imagen de proyecto Tienda REact" />
           </div>
@@ -30,7 +30,7 @@ export const WorkComponent = () => {
           <DescriptionComponent text=""/>
         </div>
         <div className="work-item">
-          <h4>Tienda JavaScript</h4>
+          <h3>Tienda JavaScript</h3>
           <div className="work-item-img">
           <img src={foto3} alt="imagen de proyecto Tienda Javascript" />
           </div>
@@ -38,7 +38,7 @@ export const WorkComponent = () => {
           <DescriptionComponent text=""/>
         </div>
         <div className="work-item">
-          <h4>Rockstar réplica</h4>
+          <h3>Rockstar réplica</h3>
           <div className="work-item-img">
           <img src={foto4} alt="imagen de proyecto Rockstar replica" />
           </div>

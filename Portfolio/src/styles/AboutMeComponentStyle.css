@@ -3,4 +3,11 @@
 }
 .about-me-text{
     text-align: justify;
+    text-wrap: pretty;
+    
+}
+@media(min-width: 768px){
+    .about-me-text{
+        font-size: 1.2rem;
+    }
 }

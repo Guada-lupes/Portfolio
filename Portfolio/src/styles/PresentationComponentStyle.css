@@ -1,14 +1,39 @@
 .presentation-section{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: space-evenly;
 }
 .presentation-name{
-    
-    h3{
+    padding-top: 1.3rem;
+}
+.presentation-name > h1{
+    font-size: 1.25rem;
+}
+.presentation-name > p{
+    font-size: 0.9rem;
+    padding-top: 0.5rem;
+}
+.presentation-image{
+width: 10rem;
+/* position: relative;
+right: 1.4rem; */
+}
+@media (min-width: 480px){
+    .presentation-name > h1{
+        font-size: 1.5rem;
+    }
+    .presentation-name > p{
         font-size: 1rem;
     }
 }
-.presentation-image{
-
+@media (min-width: 768px){
+    .presentation-name > h1{
+        font-size: 2.2rem;
+    }
+    .presentation-image{
+        width: 16rem;
+    }
+    .presentation-name > p{
+        font-size: 1.5rem;
+    }
 }

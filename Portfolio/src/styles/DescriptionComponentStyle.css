@@ -1,6 +1,7 @@
 .description-button{
     border: none;
     background-color: inherit;
+    font-weight: bold;
 }
 .description-container {
     position: fixed;

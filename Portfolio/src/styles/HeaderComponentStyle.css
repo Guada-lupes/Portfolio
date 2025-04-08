@@ -5,6 +5,14 @@ color oscuro: #006d77 #e29578 */
 
 .header{
     padding-top: 20px;
-    width: 80%;
+    width: 90%;
     margin: auto;
+}
+@media (min-width: 480px){
+.header{
+    width: 80%;
+}
+}
+@media (min-width: 768px){
+    
 }

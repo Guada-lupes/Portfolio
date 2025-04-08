@@ -1,3 +1,13 @@
 .enlace-github-container{
+    padding-bottom: 0.5rem;
+}
+.enlace-github-container > a{
+    display: flex;
+}
+.github-enlace> img{
     width: 2.5rem;
+}
+.github-enlace> svg{
+    width: 1rem;
+    height: auto;
 }

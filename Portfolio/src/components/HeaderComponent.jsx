@@ -8,7 +8,7 @@ export const HeaderComponent = () => {
   return (
     <header className='header'>
       <PresentationComponent/>
-      <SocialProfilesComponent/>
+      {/* <SocialProfilesComponent/> */}
     </header>
   )
 }

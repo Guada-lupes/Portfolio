@@ -4,7 +4,7 @@ import "../styles/TechnologiesComponentStyle.css";
 export const TechnologiesComponent = () => {
   return (
     <section className="technologies-section">
-    <h3 className="technologies-title">Tecnologías</h3>
+    <h2 className="technologies-title">Tecnologías</h2>
     <div className="technologies-container">
       
       <div className="technologies-logo">

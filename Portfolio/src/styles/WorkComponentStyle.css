@@ -1,8 +1,8 @@
 .work-section{
-    margin-top: 1.3rem;
+    margin-top: 2rem;
 }
 .work-title{
-
+font-size: 1.17rem;
 }
 .work-item-img{
     padding: 0.5rem
@@ -14,6 +14,20 @@
     padding: 0.5rem;
     background-color: white;
     flex: 0 0 auto;
-    width: 250px;
+    width: 19rem;
 }
-
+.work-item > h3{
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.2rem;
+}
+@media(min-width: 480px){
+    .work-item{
+        width: 24rem;
+    }
+}
+@media(min-width: 768px){
+    .work-item{
+        width: 38rem;
+    }
+}
