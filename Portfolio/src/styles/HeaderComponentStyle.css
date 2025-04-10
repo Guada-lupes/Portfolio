@@ -2,8 +2,36 @@
 fondos:  #edf6f9 #ffddd2
 color oscuro: #006d77 #e29578 */
 
-
-.header{
+.header-info > h1{
+font-size: 72px;
+letter-spacing: 0.138889em;
+font-weight:900;
+text-align: center;
+margin-bottom: 28px;
+color: #121212;
+}
+.header-info > p{
+    font-size: 20px;
+    letter-spacing: 0.428571em;
+    font-weight: 600;
+    text-align: center;
+    margin: 28px 440px;
+    color: #a8a8a8;
+}
+.header-nav{
+    padding: 28px
+}
+.header-nav > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 440px;
+}
+.header-nav-ul >li{
+font-size: 28px;
+color: #666;
+}
+/* .header{
     padding-top: 20px;
     width: 90%;
     margin: auto;
@@ -15,4 +43,4 @@ color oscuro: #006d77 #e29578 */
 }
 @media (min-width: 768px){
     
-}
+} */

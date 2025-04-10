@@ -3,5 +3,15 @@
   flex-direction:column;
   justify-content:space-between;
   height: auto;
-  background-image: linear-gradient(#e29578, #ffddd2, #edf6f9);
+  font-family: "proxima nova";
+  padding: 80px;
+  /* background-image: linear-gradient(#e29578, #ffddd2, #edf6f9); */
+}
+@font-face {
+  font-family: "proxima nova";
+  src: url(fonts\ProximaNovaScOsfRegular.otf);
+}
+@font-face{
+  font-family: "proxima nova regular";
+  src: url(fonts/ProximaNova-Regular.otf)
 }
