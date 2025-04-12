@@ -1,6 +1,6 @@
 import React from 'react'
 import logogh from "../assets/GitHub_Logo.png"
-import "../styles/GitHubLogoPathStyle.css"
+import "../styleNew/GitHubLogoPathStyle.css"
 
 export const GitHubLogoPath = ({path}) => {
   return (

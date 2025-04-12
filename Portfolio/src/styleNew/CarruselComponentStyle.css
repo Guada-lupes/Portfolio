@@ -1,0 +1,51 @@
+.carrusel-container {
+  /* width: 100%; */
+  width: 72%;
+  margin: auto;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+}
+.carrusel-container > button {
+  border: none;
+  background-color: inherit;
+  height: 30px;
+}
+.carrusel-button-before {
+  position: relative;
+  top: 200px;
+  left: 30px;
+}
+.carrusel-button-after {
+  position: relative;
+  top: 200px;
+  right: 30px;
+}
+.carrusel-item {
+  /* flex-basis: 1000px; */
+  height: max-content;
+}
+.carrusel-pista {
+  display: flex;
+  padding: 1rem;
+  height: 800px;
+}
+.carrusel-item-container {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.active {
+  opacity: 1;
+}
+
+.carrusel-info-container > p {
+  font-family: "proxima nova regular";
+  font-size: 1.4rem;
+  margin-top: 20px;
+}
+.carrusel-img-container {
+    height: 430px;
+}
+.carrusel-img-container >img{
+    object-fit: contain;
+}

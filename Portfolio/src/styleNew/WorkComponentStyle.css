@@ -1,0 +1,44 @@
+.work-cards-section{
+    width: 72%;
+    justify-self: center;
+    margin: auto;
+    margin-top: 60px;
+}
+.work-card-item-container{
+    /* flex-basis: 1000px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    /* box-shadow: 2px 2px 2px 2px;
+    padding: 10px; */
+}
+.work-cards-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    column-gap: 2%;
+    justify-self: center;
+}
+.work-card-img-container{
+    height: 200px;
+    overflow: hidden;
+}
+.work-card-img-container >img{
+    max-width: 150%;
+    object-fit: contain;
+}
+.work-card-title-container{
+
+}
+.work-card-title-container >p{
+    text-align: center;
+    font-size: 1.2em;
+    height: 80px;
+}
+
+.work-card-info-container > p{
+    font-family: "proxima nova regular";
+    font-size: 1.2rem;
+    text-align: center;
+}

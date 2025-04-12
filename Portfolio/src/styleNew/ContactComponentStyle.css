@@ -1,0 +1,26 @@
+.contact-section {
+  width: 72%;
+  justify-self: center;
+  margin: auto;
+  margin-top: 60px;
+}
+.contact-container {
+  justify-self: center;
+}
+.contac-text-container {
+  font-family: "proxima nova regular";
+  text-align: center;
+}
+.contac-text-container > h2 {
+  font-size: 2em;
+  padding-bottom: 30px;
+}
+.contac-text-container > p {
+  font-size: 1.2em;
+  width: 650px;
+  padding-bottom: 30px;
+  line-height: 1.7em;
+}
+.contact-form {
+  height: 1100px;
+}

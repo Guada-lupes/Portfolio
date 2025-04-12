@@ -11,7 +11,6 @@ import { CarruselComponent } from "./CarruselComponent";
 export const WorkComponent = () => {
   return (
     <section className="work-section">
-      <h2 className="work-title">Proyectos realizados</h2>
       <CarruselComponent>
       <div className="work-item">
           <h3>BookSpace</h3>

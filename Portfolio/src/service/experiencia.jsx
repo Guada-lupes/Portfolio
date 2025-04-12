@@ -1,5 +1,9 @@
+import foto1 from "../assets/empleabilidad3.jpeg"
+import foto3 from "../assets/empleabilidad1.jpeg";
+import foto2 from "../assets/orobal1.jpeg";
+
 const experiencia = [
-    {imagen: "",
+    {imagen: foto1,
         id: 1,
         alt: "imagen de una clase",
         titulo: "Docente de formación para el empleo",
@@ -7,7 +11,7 @@ const experiencia = [
         em: "Tecno Inte, Fyrescan, Reyes, FormaciónLine, Focan",
         fecha: "2023-actualidad",
     },
-    {imagen: "",
+    {imagen: foto2,
         id:2,
         titulo: "Pedagoga terapéuta",
         alt: "imagen de materiales didacticos",
@@ -15,9 +19,9 @@ const experiencia = [
         em: "Orobal",
         fecha: "2023-2024",
     },
-    {imagen: "",
+    {imagen: foto3,
         id:3,
-        alt: "imagend de una clase",
+        alt: "imagen de una clase",
         titulo: "Coordinadora/Orientadora Laboral",
         descripcion: "Diseño, redacción y gestión de proyectos para la mejora de la empleabilidad y la sensibilización, coordinación de equipos y con otros agentes, elaboración de memorias, docencia de compentencias digitales, igualdad e inserción laboral, resolución de conflictos, planificación de actividades, orientación laboral mediante IPI.",
         em:"Ayuntamiento de Adeje",

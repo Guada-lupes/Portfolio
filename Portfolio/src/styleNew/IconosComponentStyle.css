@@ -1,16 +1,17 @@
-.icono-item >p{
+.item-p >p{
     justify-self: center;
     font-family: "proxima nova regular";
     font-size: 18px;
+    text-align: center;
 }
 .iconos-container{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     width: 90%;
     column-gap: 10%;
     justify-self: center;
 }
 .home-iconos-section{
-    width: 50%;
+    width: 80%;
     justify-self: center;
 }

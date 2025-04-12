@@ -1,0 +1,25 @@
+.about-section {
+  width: 72%;
+  margin: auto;
+  margin-top: 60px;
+}
+.about-container {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+}
+.about-img-container {
+    width: 500px;
+}
+.about-article {
+    padding: 20px;
+    width: fit-content;
+    font-family: "proxima nova regular";
+    margin-top: 10px;
+    line-height: 1.7em;
+    font-size: 1.2em;
+}
+.about-article >h2{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
