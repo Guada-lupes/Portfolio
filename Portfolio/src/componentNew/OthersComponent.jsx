@@ -8,6 +8,7 @@ export const OthersComponent = () => {
   return (
     <>
     <section className="others-cards-section">
+    <h2>Arte y mixmedia</h2>
       <div className='others-cards-container'>
       {data.map((objeto) => (
         <div className="others-card-item-container" key={objeto.id}>

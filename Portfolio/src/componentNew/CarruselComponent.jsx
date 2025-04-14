@@ -4,7 +4,7 @@ import { GitHubLogoPath } from "./GitHubLogoPath";
 import { proyectosData } from "../service/proyectos";
 import "../styleNew/CarruselComponentStyle.css";
 
-export const CarruselComponent = ({ children }) => {
+export const CarruselComponent = () => {
   const data = proyectosData();
   const [currentProyect, setCurrentProyect] = useState(0);
   const proyectsAmount = data.length;
@@ -14,10 +14,9 @@ export const CarruselComponent = ({ children }) => {
     setCurrentProyect((prev) => (prev === proyectsAmount - 1 ? 0 : prev + 1));
   }
 
-  function handleBefore() {
-
-    setCurrentProyect((prev) => (prev === 0 ? proyectsAmount - 1 : prev - 1));
+  function handleBefore(e) {
     e.preventDefault();
+    setCurrentProyect((prev) => (prev === 0 ? proyectsAmount - 1 : prev - 1));
   }
 
   return (

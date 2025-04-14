@@ -16,15 +16,15 @@ export const IconosComponent = () => {
                 
             </div>
             <div className='icono-item'>
-                <Link to="/studies"><img src={foto4} alt="icono de un libro"/></Link>
+                <Link className='item-img' to="/studies"><img src={foto4} alt="icono de un libro"/></Link>
                 <Link to="/studies" className='item-p'><p>Formación</p></Link> 
             </div>
             <div className='icono-item'>
-                <Link to="/work"><img src={foto1} alt="icono de una mujer obrera" /></Link>
+                <Link className='item-img' to="/work"><img src={foto1} alt="icono de una mujer obrera" /></Link>
                 <Link to="/work" className='item-p'><p>Experiencia Profesional</p></Link>
             </div>
             <div className='icono-item'>
-                <Link to="/others"><img src={foto3} alt="icono de una caja de sorpresa" /></Link>
+                <Link className='item-img' to="/others"><img src={foto3} alt="icono de una caja de sorpresa" /></Link>
                 <Link to="/others" className='item-p'><p>Otros proyectos</p></Link>
             </div>
         </div>

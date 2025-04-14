@@ -5,7 +5,10 @@
   height: auto;
   font-family: "proxima nova";
   padding: 80px;
-  /* background-image: linear-gradient(#e29578, #ffddd2, #edf6f9); */
+
+@media(max-width:480px){
+  padding: 20px;
+}
 }
 @font-face {
   font-family: "proxima nova";

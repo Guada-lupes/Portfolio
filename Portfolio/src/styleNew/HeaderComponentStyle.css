@@ -3,12 +3,17 @@ fondos:  #edf6f9 #ffddd2
 color oscuro: #006d77 #e29578 */
 
 .header-info > h1{
-font-size: 72px;
+font-size: 69px;
 letter-spacing: 0.138889em;
 font-weight:900;
 text-align: center;
 margin-bottom: 28px;
 color: #121212;
+text-transform: uppercase;
+}
+.header-info > h1:hover{
+    color: #83C5BE;
+    cursor: pointer;
 }
 .header-info > p{
     font-size: 20px;
@@ -24,23 +29,87 @@ color: #121212;
 .header-nav > ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 0px 440px;
 }
 .header-nav-ul >li{
-font-size: 28px;
+font-size: 22px;
 color: #666;
+text-transform: uppercase;
+    letter-spacing: 2px;
 }
-/* .header{
-    padding-top: 20px;
-    width: 90%;
-    margin: auto;
+.header-nav-ul >li:hover{
+    color: #83C5BE;
+    cursor: pointer;
 }
-@media (min-width: 480px){
-.header{
-    width: 80%;
+.titles-checked{
+    color: #83C5BE;
 }
+@media(max-width: 480px) {
+    .header{
+        overflow: hidden;
+    }
+    .header-info > h1{
+        font-size: 2em;
+    }
+    .header-info > p    {
+        font-size: 1em;
+        margin: 0;
+    }
+    .header-nav {
+        padding: 0px;
+    }
+    .header-nav > ul {
+        /* display: flex;
+        flex-direction: row;
+        justify-content: space-between; */
+        margin: 0px;
+    }
+    .header-nav-ul >li {
+        font-size: 0.8em;
+        /* color: #666;
+        text-transform: uppercase;
+        letter-spacing: 2px; */
+    }
+    .header-info{
+        margin-bottom: 2em;
+    }
+    .header-nav-container{
+        width: 90%;
+        justify-self: center;
+    }
 }
-@media (min-width: 768px){
-    
-} */
+@media (min-width:481px) and (max-width:767px){
+    .header{
+        overflow: hidden;
+    }
+    .header-info > h1{
+        font-size: 2em;
+    }
+    .header-info > p    {
+        font-size: 1em;
+        margin: 0;
+    }
+    .header-nav {
+        padding: 0px;
+    }
+    .header-nav > ul {
+        /* display: flex;
+        flex-direction: row;
+        justify-content: space-between; */
+        margin: 0px;
+    }
+    .header-nav-ul >li {
+        font-size: 0.8em;
+        /* color: #666;
+        text-transform: uppercase;
+        letter-spacing: 2px; */
+    }
+    .header-info{
+        margin-bottom: 2em;
+    }
+    .header-nav-container{
+        width: 90%;
+        justify-self: center;
+    }
+}

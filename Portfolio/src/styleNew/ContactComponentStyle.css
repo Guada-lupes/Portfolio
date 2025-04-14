@@ -24,3 +24,66 @@
 .contact-form {
   height: 1100px;
 }
+.contact-email{
+  font-weight: 900;
+}
+.contact-email:hover{
+  color:blue
+}
+@media(max-width:480px){
+
+  .contact-section {
+    width: 100%;
+    /* justify-self: center;
+    margin: auto; */
+    margin-top: 30px;
+    overflow: hidden;
+}
+.contac-text-container > h2 {
+  font-size: 1.5em;
+  /* padding-bottom: 30px; */
+}
+.contac-text-container > p {
+  font-size: 1.2em;
+  width: auto;
+  padding-bottom: 30px;
+  line-height: 1.3em;
+  text-align:left;
+}
+.contact-container {
+  justify-self: auto;
+  padding: 0 15px;
+}
+.contact-form {
+  height: 1010px;
+  width: -webkit-fill-available;
+}
+}
+@media (min-width:481) and (max-width:767px){
+  .contact-section {
+    width: 100%;
+    /* justify-self: center;
+    margin: auto; */
+    margin-top: 30px;
+    overflow: hidden;
+}
+.contac-text-container > h2 {
+  font-size: 1.5em;
+  /* padding-bottom: 30px; */
+}
+.contac-text-container > p {
+  font-size: 1.2em;
+  width: auto;
+  padding-bottom: 30px;
+  line-height: 1.3em;
+  text-align:left;
+}
+.contact-container {
+  justify-self: auto;
+  padding: 0 15px;
+}
+.contact-form {
+  height: 1010px;
+  width: -webkit-fill-available;
+}
+}

@@ -22,7 +22,7 @@ const experiencia = [
     {imagen: foto3,
         id:3,
         alt: "imagen de una clase",
-        titulo: "Coordinadora/Orientadora Laboral",
+        titulo: "Coordinadora / Orientadora Laboral",
         descripcion: "Diseño, redacción y gestión de proyectos para la mejora de la empleabilidad y la sensibilización, coordinación de equipos y con otros agentes, elaboración de memorias, docencia de compentencias digitales, igualdad e inserción laboral, resolución de conflictos, planificación de actividades, orientación laboral mediante IPI.",
         em:"Ayuntamiento de Adeje",
         fecha: "2020-2024",

@@ -1,13 +1,23 @@
 import React from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../styleNew/HeaderComponentStyle.css";
+import { useLocation } from "react-router-dom";
 
 export const HeaderComponent = () => {
+  const location = useLocation();
+  const url = location.pathname;
+
+useEffect(()=>{
+
+}, [url])
+
+
   return (
     <header className="header">
       <div className="header-info">
         <h1>
-          <span>Guadalupe Marándola</span>
+          <Link to="/">Guadalupe Marándola</Link>
         </h1>
         <p>Desarrollo Web + Educación</p>
       </div>
@@ -16,13 +26,13 @@ export const HeaderComponent = () => {
         <nav className="header-nav">
           <ul className="header-nav-ul">
             <li>
-              <Link to="/">Inicio</Link>
+              <Link to="/" className={url === "/" ? "titles-checked" :""}>Inicio</Link>
             </li>
             <li>
-              <Link to="/aboutme">Sobre mi</Link>
+              <Link to="/aboutme" className={url === "/aboutme" ? "titles-checked" : ""}>Sobre mi</Link>
             </li>
             <li>
-              <Link to="/contact">Contacto</Link>
+              <Link to="/contact" className={url === "/contact" ? "titles-checked" : ""}>Contacto</Link>
             </li>
           </ul>
         </nav>

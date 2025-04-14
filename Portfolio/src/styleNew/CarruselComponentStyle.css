@@ -5,6 +5,12 @@
   margin-top: 60px;
   display: flex;
   flex-direction: row;
+  animation: aparecer 0.5s;
+  animation-timing-function: ease;
+}
+
+@keyframes aparecer{
+  from{opacity:0 ;} to{opacity: 100;}
 }
 .carrusel-container > button {
   border: none;
@@ -32,7 +38,7 @@
 }
 .carrusel-item-container {
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.3s ease;
 }
 .active {
   opacity: 1;
@@ -49,3 +55,22 @@
 .carrusel-img-container >img{
     object-fit: contain;
 }
+@media(max-width:480px){
+  .carrusel-container{
+    display: none;
+  }
+}
+
+  /* .carrusel-container{
+    flex-direction: column;
+  }
+  .carrusel-container > button{
+    display: none;
+  }
+  .carrusel-info-container > p {
+    font-size: 0.2em;
+    margin-top: 0;
+}
+.carrusel-img-container {
+  height: auto;
+} */
