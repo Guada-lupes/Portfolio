@@ -1,115 +1,116 @@
-/* Paleta de colores
-fondos:  #edf6f9 #ffddd2
-color oscuro: #006d77 #e29578 */
-
-.header-info > h1{
-font-size: 69px;
-letter-spacing: 0.138889em;
-font-weight:900;
-text-align: center;
-margin-bottom: 28px;
-color: #121212;
-text-transform: uppercase;
+.header-info > h1 {
+  font-size: 69px;
+  letter-spacing: 0.138889em;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 28px;
+  color: #121212;
+  text-transform: uppercase;
 }
-.header-info > h1:hover{
-    color: #83C5BE;
-    cursor: pointer;
+.header-info > h1:hover {
+  color: #83c5be;
+  cursor: pointer;
 }
-.header-info > p{
-    font-size: 20px;
-    letter-spacing: 0.428571em;
-    font-weight: 600;
-    text-align: center;
-    margin: 28px 440px;
-    color: #a8a8a8;
+.header-info > p {
+  font-size: 24px;
+  letter-spacing: 0.428571em;
+  font-weight: 600;
+  text-align: center;
+  margin: 28px 0px;
+  color: #a8a8a8;
 }
-.header-nav{
-    padding: 28px
+.header-nav {
+  padding: 28px;
+  max-width: 1015px;
+  margin: auto;
 }
-.header-nav > ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 0px 440px;
+.header-nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
-.header-nav-ul >li{
-font-size: 22px;
-color: #666;
-text-transform: uppercase;
-    letter-spacing: 2px;
+.header-nav-ul > li {
+  font-size: 22px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
-.header-nav-ul >li:hover{
-    color: #83C5BE;
-    cursor: pointer;
+.header-nav-ul > li:hover {
+  color: #83c5be;
+  cursor: pointer;
 }
-.titles-checked{
-    color: #83C5BE;
+.titles-checked {
+  color: #83c5be;
 }
-@media(max-width: 480px) {
-    .header{
-        overflow: hidden;
-    }
-    .header-info > h1{
-        font-size: 2em;
-    }
-    .header-info > p    {
-        font-size: 1em;
-        margin: 0;
-    }
-    .header-nav {
-        padding: 0px;
-    }
-    .header-nav > ul {
-        /* display: flex;
-        flex-direction: row;
-        justify-content: space-between; */
-        margin: 0px;
-    }
-    .header-nav-ul >li {
-        font-size: 0.8em;
-        /* color: #666;
-        text-transform: uppercase;
-        letter-spacing: 2px; */
-    }
-    .header-info{
-        margin-bottom: 2em;
-    }
-    .header-nav-container{
-        width: 90%;
-        justify-self: center;
-    }
+@media (max-width: 480px) {
+  .header {
+    overflow: hidden;
+  }
+  .header-info > h1 {
+    font-size: 2em;
+  }
+  .header-info > p {
+    font-size: 1em;
+    margin: 0;
+  }
+  .header-nav {
+    padding: 0px;
+  }
+  .header-nav > ul {
+    margin: 0px;
+  }
+  .header-nav-ul > li {
+    font-size: 0.8em;
+  }
+  .header-info {
+    margin-bottom: 2em;
+  }
+  .header-nav-container {
+    width: 90%;
+    justify-self: center;
+  }
 }
-@media (min-width:481px) and (max-width:767px){
-    .header{
-        overflow: hidden;
-    }
-    .header-info > h1{
-        font-size: 2em;
-    }
-    .header-info > p    {
-        font-size: 1em;
-        margin: 0;
-    }
-    .header-nav {
-        padding: 0px;
-    }
-    .header-nav > ul {
-        /* display: flex;
-        flex-direction: row;
-        justify-content: space-between; */
-        margin: 0px;
-    }
-    .header-nav-ul >li {
-        font-size: 0.8em;
-        /* color: #666;
-        text-transform: uppercase;
-        letter-spacing: 2px; */
-    }
-    .header-info{
-        margin-bottom: 2em;
-    }
-    .header-nav-container{
-        width: 90%;
-        justify-self: center;
-    }
+@media (min-width: 481px) and (max-width: 767px) {
+  .header {
+    overflow: hidden;
+  }
+  .header-info > h1 {
+    font-size: 2em;
+  }
+  .header-info > p {
+    font-size: 1em;
+    margin: 0;
+  }
+  .header-nav {
+    padding: 0px;
+  }
+  .header-nav > ul {
+    margin: 0px;
+  }
+  .header-nav-ul > li {
+    font-size: 0.8em;
+  }
+  .header-info {
+    margin-bottom: 2em;
+  }
+  .header-nav-container {
+    width: 90%;
+    justify-self: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header-info > h1 {
+    font-size: 2.5em;
+  }
+  .header-info > p {
+    font-size: 1.2em;
+  }
+  .header-nav-ul > li {
+    font-size: 1em;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .header-info > h1 {
+    font-size: 3em;
+  }
 }

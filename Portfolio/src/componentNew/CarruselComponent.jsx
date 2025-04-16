@@ -21,12 +21,24 @@ export const CarruselComponent = () => {
 
   return (
     <section className="carrusel-container">
-      <button className="carrusel-button-before" onClick={(e)=>handleBefore(e)}>◀</button>
       <div className="carrusel-pista">
-        {data.map(
-          (objeto, index) =>
-            (<div className={index === currentProyect ? "carrusel-item-container active" : "carrusel-item-container"} key={objeto.id}>
-                {index === currentProyect && (<div className="carrusel-item">
+        <button
+          className="carrusel-button-before"
+          onClick={(e) => handleBefore(e)}
+        >
+          ◀
+        </button>
+        {data.map((objeto, index) => (
+          <div
+            className={
+              index === currentProyect
+                ? "carrusel-item-container active"
+                : "carrusel-item-container"
+            }
+            key={objeto.id}
+          >
+            {index === currentProyect && (
+              <div className="carrusel-item">
                 <div className="carrusel-img-container">
                   <img src={objeto.imagen} alt={objeto.alt} />
                 </div>
@@ -34,12 +46,17 @@ export const CarruselComponent = () => {
                   <p>{objeto.descripcion}</p>
                 </div>
                 <GitHubLogoPath path={objeto.em} />
-                </div>)}
               </div>
-            )
-        )}
+            )}
+          </div>
+        ))}
+        <button
+          className="carrusel-button-after"
+          onClick={(e) => handleNext(e)}
+        >
+          ▶
+        </button>
       </div>
-      <button className="carrusel-button-after" onClick={(e)=>handleNext(e)}>▶</button>
     </section>
   );
 };

@@ -1,5 +1,4 @@
 .footer {
-  /* height: 10vh; */
   margin-top: 150px;
 }
 .footer-iconos {
@@ -9,7 +8,7 @@
   width: 200px;
   justify-self: center;
 }
-.mi-creacion{
+.mi-creacion {
   padding: 20px 0px;
   font-family: "proxima nova regular";
   text-align: center;
@@ -39,6 +38,9 @@
   cursor: pointer;
   font-weight: 900;
 }
+.footer-icon {
+  font-size: 1.3em;
+}
 .privacy-content > h2 {
   font-size: 2em;
   text-align: center;
@@ -66,9 +68,8 @@
     justify-content: flex-start;
   }
 }
-@media(max-width:480){
+@media (max-width: 480) {
   .footer {
-    height: 10vh;
     margin-top: 50px;
   }
   .footer-icon {
@@ -83,7 +84,7 @@
     justify-content: flex-start;
   }
 }
-@media (min-width:481px) and (max-width:767px){
+@media (min-width: 481px) and (max-width: 1023px) {
   .footer {
     height: 10vh;
     margin-top: 50px;

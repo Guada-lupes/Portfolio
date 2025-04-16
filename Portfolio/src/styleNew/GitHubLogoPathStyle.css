@@ -1,56 +1,50 @@
-.enlace-github-container{
-margin-top: 20px;
-justify-self: anchor-center;
+.enlace-github-container {
+  margin-top: 20px;
+  justify-self: anchor-center;
 }
-.enlace-github-container > a{
-    display: flex;
+.enlace-github-container > a {
+  display: flex;
 }
-.github-enlace> img{
-    width: 5rem;
+.github-enlace > img {
+  width: 5rem;
 }
-.github-enlace> svg{
-    width: 1.5rem;
-    height: auto;
+.github-enlace > svg {
+  width: 1.5rem;
+  height: auto;
 }
-@media(max-width:480px){
-    .enlace-github-container {
-        margin: 20px;
-        /* justify-self: anchor-center; */
-    }
-    .github-enlace> img {
-        width: 2em;
-        height: 1em;
-      }
-      .github-enlace> svg {
-        width: 0.5em;
-        /* height: auto; */
-      }
+@media (max-width: 480px) {
+  .enlace-github-container {
+    margin: 20px;
+  }
+  .github-enlace > img {
+    width: 2em;
+    height: 1em;
+  }
+  .github-enlace > svg {
+    width: 0.5em;
+  }
 }
-@media(max-width:480){
-    .enlace-github-container {
-        margin: 20px;
-        /* justify-self: anchor-center; */
-    }
-    .github-enlace> img {
-        width: 2em;
-        height: 1em;
-      }
-      .github-enlace> svg {
-        width: 0.5em;
-        /* height: auto; */
-      }
+@media (max-width: 480) {
+  .enlace-github-container {
+    margin: 20px;
+  }
+  .github-enlace > img {
+    width: 2em;
+    height: 1em;
+  }
+  .github-enlace > svg {
+    width: 0.5em;
+  }
 }
-@media (min-width:481px) and (max-width:767px){
-    .enlace-github-container {
-        margin: 20px;
-        /* justify-self: anchor-center; */
-    }
-    .github-enlace> img {
-        width: 2em;
-        height: 1em;
-      }
-      .github-enlace> svg {
-        width: 0.5em;
-        /* height: auto; */
-      }
+@media (min-width: 481px) and (max-width: 767px) {
+  .enlace-github-container {
+    margin: 20px;
+  }
+  .github-enlace > img {
+    width: 2em;
+    height: 1em;
+  }
+  .github-enlace > svg {
+    width: 0.5em;
+  }
 }

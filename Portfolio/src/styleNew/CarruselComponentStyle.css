@@ -1,5 +1,4 @@
 .carrusel-container {
-  /* width: 100%; */
   width: 72%;
   margin: auto;
   margin-top: 60px;
@@ -8,11 +7,15 @@
   animation: aparecer 0.5s;
   animation-timing-function: ease;
 }
-
-@keyframes aparecer{
-  from{opacity:0 ;} to{opacity: 100;}
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
 }
-.carrusel-container > button {
+.carrusel-pista > button {
   border: none;
   background-color: inherit;
   height: 30px;
@@ -28,7 +31,6 @@
   right: 30px;
 }
 .carrusel-item {
-  /* flex-basis: 1000px; */
   height: max-content;
 }
 .carrusel-pista {
@@ -43,34 +45,39 @@
 .active {
   opacity: 1;
 }
-
 .carrusel-info-container > p {
   font-family: "proxima nova regular";
   font-size: 1.4rem;
   margin-top: 20px;
 }
 .carrusel-img-container {
-    height: 430px;
+  height: 500px;
 }
-.carrusel-img-container >img{
-    object-fit: contain;
+.carrusel-img-container > img {
+  object-fit: contain;
 }
-@media(max-width:480px){
-  .carrusel-container{
+@media (max-width: 480px) {
+  .carrusel-container {
     display: none;
   }
 }
-
-  /* .carrusel-container{
-    flex-direction: column;
-  }
-  .carrusel-container > button{
+@media (min-width: 481px) and (max-width: 1023px) {
+  .carrusel-container {
     display: none;
   }
-  .carrusel-info-container > p {
-    font-size: 0.2em;
-    margin-top: 0;
 }
-.carrusel-img-container {
-  height: auto;
-} */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .carrusel-button-before {
+    position: relative;
+    top: 120px;
+    left: 30px;
+  }
+  .carrusel-button-after {
+    position: relative;
+    top: 120px;
+    right: 30px;
+  }
+  .carrusel-img-container {
+    height: 300px;
+  }
+}

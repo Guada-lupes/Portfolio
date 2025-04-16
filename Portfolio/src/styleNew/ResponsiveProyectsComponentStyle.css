@@ -1,6 +1,5 @@
-
-@media(max-width:480px){
-  .responsive-carrusel-container{
+@media (max-width: 480px) {
+  .responsive-carrusel-container {
     width: 90%;
     margin: auto;
     margin-top: 30px;
@@ -9,105 +8,73 @@
     animation: aparecer 0.5s;
     animation-timing-function: ease;
   }
-  
-  @keyframes aparecer{
-    from{opacity:0 ;} to{opacity: 100;}
+  @keyframes aparecer {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100;
+    }
   }
-
   .responsive-carrusel-item {
-    /* flex-basis: 1000px; */
     height: max-content;
   }
   .responsive-carrusel-pista {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    /* padding: 1rem; */
-    /* height: 800px; */
   }
-  /* .carrusel-item-container {
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  .active {
-    opacity: 1;
-  } */
-  
   .responsive-carrusel-info-container > p {
     font-family: "proxima nova regular";
     font-size: 1.2rem;
     margin-top: 20px;
   }
-  .responsive-carrusel-img-container {
-      /* height: 430px; */
-  }
-  .responsive-carrusel-img-container >img{
-      object-fit: contain;
+  .responsive-carrusel-img-container > img {
+    object-fit: contain;
   }
 }
-
-    /* .carrusel-container{
-      flex-direction: column;
-    }
-    .carrusel-container > button{
-      display: none;
-    }
-    .carrusel-info-container > p {
-      font-size: 0.2em;
-      margin-top: 0;
+@media (min-width: 780) {
+  .responsive-carrusel-container {
+    display: none;
   }
-  .carrusel-img-container {
-    height: auto;
-  } */
-  
-@media(min-width: 780){
-    .responsive-carrusel-container{
-        display: none;
-    }
 }
-@media(max-width:480){
-  .responsive-carrusel-container{
-    width: 90%;
+@media (min-width: 481px) and (max-width: 1023px) {
+  .responsive-carrusel-container {
+    width: 80%;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
     animation: aparecer 0.5s;
     animation-timing-function: ease;
   }
-  
-  @keyframes aparecer{
-    from{opacity:0 ;} to{opacity: 100;}
+  @keyframes aparecer {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100;
+    }
   }
-
   .responsive-carrusel-item {
-    /* flex-basis: 1000px; */
     height: max-content;
   }
   .responsive-carrusel-pista {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    /* padding: 1rem; */
-    /* height: 800px; */
   }
-  /* .carrusel-item-container {
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  .active {
-    opacity: 1;
-  } */
-  
   .responsive-carrusel-info-container > p {
     font-family: "proxima nova regular";
     font-size: 1.2rem;
     margin-top: 20px;
   }
-  .responsive-carrusel-img-container {
-      /* height: 430px; */
+  .responsive-carrusel-img-container > img {
+    object-fit: contain;
   }
-  .responsive-carrusel-img-container >img{
-      object-fit: contain;
+}
+@media (min-width: 1024px) {
+  .responsive-carrusel-container {
+    display: none;
   }
 }
