@@ -21,6 +21,9 @@
   padding-bottom: 30px;
   line-height: 1.7em;
 }
+.contac-text-container > p>span{
+  font-weight: bold;
+}
 .contact-form {
   height: 1100px;
 }

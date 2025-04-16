@@ -11,9 +11,9 @@ export const AboutMeComponent = () => {
         </div>
         <article className='about-article'>
             <h2>Hola, soy Guadalupe</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora commodi aliquam officiis ea, ex expedita recusandae porro, quis veniam nostrum reprehenderit laborum ab aspernatur. Numquam exercitationem et odit aut sit.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur quasi quod odio est expedita optio excepturi ut, pariatur totam voluptatum enim atque temporibus id repudiandae exercitationem! Reiciendis, odit? Nostrum, iure.
-            </p>
+            <p>En 2024 me he embarcado en un nuevo proyecto profesional, convertirme en <span>Desarroladora Web Front-End</span>. Siempre me ha gustado la tecnología y como pedagoga integro en mi práctica numerosas herramientas digitales que facilitan y dinamizan el trabajo. Mi sorpresa fué descubrir que ser desarroladora web encajaba perfectamente con mi persona: la necesidad de resolver de problemas, de ser perseverante, de tolerar la frustración y la incertidumbre, incluso, el tener que gestionar un aprendizaje contínuo o convertirme un poquito en investigadora.</p>
+            <p>Sumado a todo ello, la posibilidad de ser creativa y la libertad de diseñar y crear proyectos personales, aumentaron mi fascinación por el mundo del desarrollo. Aqui es donde me quiero quedar y crecer profesionalmente, por supuesto, trayendo conmigo, mis conocimientos y habilidades desarrolladas como pedagoga.</p>
+            <p>Actualmente utilizo las siguientes tecnologías: <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span>, <span>React</span>, <span>Vite</span>, <span>Node.js</span>, <span>Sass</span>. Estoy trabajando en mejorar mi dominio y en crear código más <span>limpio</span>, <span>eficiente</span> y <span>escalable</span>.</p>
         </article>
         </div>
     </section>

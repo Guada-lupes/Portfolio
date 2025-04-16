@@ -31,9 +31,15 @@
   line-height: 1.7em;
   font-size: 1.2em;
 }
-.about-article > h2 {
+.about-article>p{
+  padding-bottom: 10px;
+}
+.about-article > h2  {
   font-size: 2em;
   margin-bottom: 20px;
+}
+.about-article >p>span{
+  font-weight: bold;
 }
 @media (max-width: 480px) {
   .about-section {
