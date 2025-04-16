@@ -31,7 +31,7 @@ Y en la **página principal** encontrarás:
 - 🌐 **Proyectos Web**
 - 🎨 **Otros Proyectos**
 
-La sección de **proyectos** incluye un carrusel animado para mostrar mis trabajos como desarrolladora frontend. El resto de las secciones tienen un diseño sobrio con predominancia de **tonos grises**, para mantener la claridad y accesibilidad visual.
+La sección de **proyectos** en su versióon de escritorio incluye un carrusel animado para mostrar mis trabajos como desarrolladora frontend. El resto de las secciones tienen un diseño sobrio con predominancia de **tonos grises**, para mantener la claridad y accesibilidad visual.
 
 ---
 
