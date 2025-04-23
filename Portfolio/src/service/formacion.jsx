@@ -1,12 +1,4 @@
 const formacion = [
-    {
-    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbjtb2yk4262Y5bu2gPjTHYKjry-hWf1m9Eg&s",
-    id:1,
-    alt: "logo de la academia",
-    titulo: "Desarrollo Web Front-End",
-    descripcion: "2025",
-    em:"Code Space",
-},
 {
     imagen: "https://www.uned.es/universidad/.imaging/mte/home-nueva-theme/120/dam/recursos-corporativos/logotipos/genericos/Logo-UNED-30x30_Color.png/jcr:content/Logo-UNED-bajares.png",
     id:2,
@@ -32,9 +24,24 @@ const formacion = [
     em:"Universitat de Barcelona",
 }]
 
+const formacionEspecifica = [
+  {
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbjtb2yk4262Y5bu2gPjTHYKjry-hWf1m9Eg&s",
+    id:1,
+    alt: "logo de la academia",
+    titulo: "Desarrollo Web Front-End",
+    descripcion: "2025",
+    aprendizajes: "Formación práctica intensiva ....",
+    em:"Code Space",
+},
+];
 
 export function formacionData(){
   return (
     formacion
   )
+}
+
+export function formacionEspecificaData() {
+  return(formacionEspecifica)
 }

@@ -1,0 +1,40 @@
+.technologies-section {
+  width: 72%;
+  justify-self: center;
+  margin: auto;
+  margin-top: 60px;
+  font-family: "proxima nova regular";
+}
+.technologies-title{
+    justify-self: center;
+    font-size: 2em;
+}
+.technologies-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  justify-items: center;
+  row-gap: 50px;
+  margin-top: 60px;
+}
+.technologies-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: transform .3s ease;
+}
+.technologies-item:hover{
+  transform: scale(1.2, 1.2);
+}
+.technologies-icon {
+  width: 5em;
+  height: 6em;
+  transition: transform .3s ease;
+}
+.technologies-item:hover .technologies-icon{
+  transform: rotate(15deg);
+}
+.technologies-icon > svg {
+  width: 100%;
+  height: auto;
+}

@@ -19,7 +19,7 @@ export const FooterComponent = () => {
       <div onClick={openPolicy} className="footer-privacy footer-icon">
         Politica de privacidad
       </div>
-      <div className="footer-icon mi-creacion">Web creada por Guadalupe Marándola</div>
+      <div className="mi-creacion">Web creada por Guadalupe Marándola</div>
       {open && (
         <div className="privacy-container" onClick={() => setOpen(false)}>
           <div className="privacy-content" onClick={(e) => e.stopPropagation()}>

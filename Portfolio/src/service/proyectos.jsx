@@ -9,7 +9,7 @@ const proyectos = [
         id:1,
         alt: "imagen del proyecto",
         titulo: "BookSpace",
-        descripcion: "Este proyecto es una plataforma de gestión de libros y usuarios desarrollada con Vite y React. Permite a los usuarios explorar libros, gestionar favoritos, gestionar tareas administrativas (para administradores) y realizar operaciones CRUD tanto para libros como para perfiles de usuario. La aplicación utiliza React Context para la gestión global del estado y los servicios, gracias a la interacción con una matriz de objetos de datos simulados.",
+        descripcion: "Plataforma de gestión de libros y usuarios desarrollada con Vite y React. Permite a los usuarios explorar libros, gestionar favoritos, gestionar tareas administrativas (para administradores) y realizar operaciones CRUD tanto para libros como para perfiles de usuario. La aplicación utiliza React Context para la gestión global del estado y los servicios, gracias a la interacción con una matriz de objetos de datos simulados.",
         em: "https://github.com/Guada-lupes/Proyecto-Final--Grupo-1.git",
     },
     {
@@ -33,7 +33,7 @@ const proyectos = [
         id:4,
         alt: "imagen del proyecto",
         titulo: "Réplica Rockstar",
-        descripcion: "Réplica de la página principal de Rockstar utilizando HTML y SASS para la escritura de estilos CSS. La version mobile tiene un menú hamburguesa desplegable. En cambio, las versiones tablet y escritorio tienen un menu de navegación visible en el header.",
+        descripcion: "Réplica de la página principal de Rockstar utilizando HTML y SASS para la escritura de estilos CSS. La versión mobile tiene un menú hamburguesa desplegable. En cambio, las versiones tablet y escritorio tienen un menú de navegación visible en el header.",
         em: "https://github.com/Guada-lupes/Rockstars-replica.git",
     },
 ]

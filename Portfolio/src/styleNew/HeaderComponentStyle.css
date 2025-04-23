@@ -12,7 +12,7 @@
   cursor: pointer;
 }
 .header-info > p {
-  font-size: 24px;
+  font-size: 16px;
   letter-spacing: 0.428571em;
   font-weight: 600;
   text-align: center;
@@ -28,9 +28,10 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  padding: 0 200px;
 }
 .header-nav-ul > li {
-  font-size: 22px;
+  font-size: 17px;
   color: #666;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -58,6 +59,7 @@
   }
   .header-nav > ul {
     margin: 0px;
+    padding: 0px;
   }
   .header-nav-ul > li {
     font-size: 0.8em;
@@ -78,7 +80,7 @@
     font-size: 2em;
   }
   .header-info > p {
-    font-size: 1em;
+    font-size: 0.9em;
     margin: 0;
   }
   .header-nav {
@@ -86,9 +88,10 @@
   }
   .header-nav > ul {
     margin: 0px;
+    padding: 0 50px;
   }
   .header-nav-ul > li {
-    font-size: 0.8em;
+    font-size: 1em;
   }
   .header-info {
     margin-bottom: 2em;
@@ -103,10 +106,13 @@
     font-size: 2.5em;
   }
   .header-info > p {
-    font-size: 1.2em;
+    font-size: 0.9em;
   }
   .header-nav-ul > li {
     font-size: 1em;
+  }
+  .header-nav>ul {
+    padding: 0 70px;
   }
 }
 @media (min-width: 1024px) and (max-width: 1439px) {

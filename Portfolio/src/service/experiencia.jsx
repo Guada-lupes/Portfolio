@@ -7,7 +7,7 @@ const experiencia = [
         id: 1,
         alt: "imagen de una clase",
         titulo: "Docente de formación para el empleo",
-        descripcion: "Mi labor es ayudar a las personas a mejorar su empleabilidad a través de herramientas para la busqueda de empleo y el entrenamiento en competencias blandas.",
+        descripcion: "Mi labor es ayudar a las personas a mejorar su empleabilidad a través de herramientas para la búsqueda de empleo y el entrenamiento en competencias blandas.",
         em: "Tecno Inte, Fyrescan, Reyes, FormaciónLine, Focan",
         fecha: "2023-actualidad",
     },

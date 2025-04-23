@@ -17,10 +17,11 @@
   grid-template-columns: repeat(4, 1fr);
   width: 90%;
   column-gap: 10%;
+  row-gap: 10%;
   justify-self: center;
 }
 .item-img > img {
-  transition: 0.5 ease-in-out;
+  transition: 1s ease;
 }
 .item-img > img:hover {
   transform: scale(1.2, 1.2);

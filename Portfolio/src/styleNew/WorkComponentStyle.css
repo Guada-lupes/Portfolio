@@ -43,7 +43,8 @@
   height: 80px;
 }
 .work-card-title-container{
-  padding: 10px;
+  padding: 0 10px;
+  min-height: 80px;
 }
 .work-card-info-container{
   padding: 10px;
@@ -97,7 +98,6 @@
   }
   .work-card-title-container > p {
     font-size: 1.2em;
-    height: auto;
     padding-bottom: 10px;
   }
   .work-card-info-container > p {

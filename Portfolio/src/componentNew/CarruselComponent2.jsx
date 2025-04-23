@@ -1,34 +1,27 @@
 import React from "react";
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { GitHubLogoPath } from "./GitHubLogoPath";
 import { proyectosData } from "../service/proyectos";
 import "../styleNew/CarruselComponentStyle.css";
 
-export const CarruselComponent = () => {
+export const CarruselComponent2 = () => {
   const data = proyectosData();
   const [slideDirection, setSlideDirection] = useState(null);
   const [slideNext, setSlideNext] = useState(null);
   const [currentProyect, setCurrentProyect] = useState(0);
   const proyectsAmount = data.length;
-  const pistaRef = useRef(null);
 
+  function handleNext(e) {
+    e.preventDefault();
+    setCurrentProyect((prev) => (prev === proyectsAmount - 1 ? 0 : prev + 1));
+    setSlideDirection("right");
 
-  function handleNext() {
-    if (pistaRef.current) {
-      pistaRef.current.scrollBy({
-        left: pistaRef.current.offsetWidth,
-        behavior: "smooth",
-      });
-    }
-    console.log("hola")
   }
-  function handleBefore() {
-    if (pistaRef.current) {
-      pistaRef.current.scrollBy({
-        left: -pistaRef.current.offsetWidth,
-        behavior: "smooth",
-      });
-    }
+
+  function handleBefore(e) {
+    e.preventDefault();
+    setCurrentProyect((prev) => (prev === 0 ? proyectsAmount - 1 : prev - 1));
+    setSlideDirection("left")
   }
 
   return (
@@ -39,12 +32,15 @@ export const CarruselComponent = () => {
         >
           ◀
         </button>
-      <div className="carrusel-pista" ref={pistaRef}>
+      <div className="carrusel-pista">
         {data.map((objeto, index) => (
           <div
-            className={"carrusel-item-container"}
-            key={index}
+            className={`carrusel-item-container 
+              ${index === currentProyect ? `active ${slideDirection}` : ''} 
+              ${index === currentProyect + 1 ? 'next' : ''}`}
+            key={objeto.id}
           >
+            {index === currentProyect && (
               <div className="carrusel-item">
                 <div className="carrusel-img-container">
                   <img src={objeto.imagen} alt={objeto.alt} />
@@ -54,6 +50,7 @@ export const CarruselComponent = () => {
                 </div>
                 <GitHubLogoPath path={objeto.em} />
               </div>
+            )}
           </div>
         ))}
       </div>

@@ -10,6 +10,7 @@ import { AboutMeComponent } from "./componentNew/AboutMeComponent";
 import { ContactComponent } from "./componentNew/ContactComponent";
 import { IconosComponent } from "./componentNew/IconosComponent";
 import { ScrollToTopComponents } from "./componentNew/ScrollToTopComponents";
+import { TechnologiesComponent } from "./componentNew/TechnologiesComponent";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/others" element={<OthersComponent/>}/>
         <Route path="/aboutme" element={<AboutMeComponent/>}/>
         <Route path="/contact" element={<ContactComponent/>}/>
+        <Route path="/tech" element={<TechnologiesComponent/>}/>
       </Routes>
       <FooterComponent/>
     </>

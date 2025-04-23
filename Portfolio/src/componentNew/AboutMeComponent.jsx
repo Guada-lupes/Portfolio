@@ -7,7 +7,7 @@ export const AboutMeComponent = () => {
     <section className='about-section'>
         <div className='about-container'>
         <div className='about-img-container'>
-            <img src={foto1} alt="imagen de perfil" />
+            <img loading='lazy' src={foto1} alt="imagen de perfil" />
         </div>
         <article className='about-article'>
             <h2>Hola, soy Guadalupe</h2>

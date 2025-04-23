@@ -9,11 +9,12 @@ export const OthersComponent = () => {
     <>
     <section className="others-cards-section">
     <h2>Arte y mixmedia</h2>
+    <p>ff</p>
       <div className='others-cards-container'>
       {data.map((objeto) => (
         <div className="others-card-item-container" key={objeto.id}>
           <div className="others-card-img-container">
-            <img src={objeto.imagen} alt={objeto.alt} />
+            <img loading="lazy" src={objeto.imagen} alt={objeto.alt} />
           </div>
           <div className="others-card-title-container">
             <p>{objeto.titulo}</p>

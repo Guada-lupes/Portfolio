@@ -2,27 +2,11 @@
   width: 72%;
   margin: auto;
   margin-top: 60px;
+  display: flex;
+  flex-direction: row;
   animation: aparecer 0.5s;
   animation-timing-function: ease;
   position: relative;
-  overflow:hidden;
-}
-.carrusel-item-container {
-  flex: 0 0 100%;
-}
-.carrusel-pista {
-  display: flex;
-  flex-direction: row;
-  padding: 1rem;
-  min-height: 700px;
-  gap: 3%;
-  overflow-x: auto;
-  overflow-x: auto;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* IE y Edge */
-}
-.carrusel-pista::-webkit-scrollbar {
-  display: none; /* Chrome, Safari y otros Webkit */
 }
 @keyframes aparecer {
   from {
@@ -39,17 +23,28 @@
 }
 .carrusel-button-before {
   position: absolute;
-  top: 10%;
-  /* left: -10%; */
+  top: 20%;
+  left: -10%;
 }
 .carrusel-button-after {
   position: absolute;
   top: 20%;
-  /* right: -10%; */
+  right: -10%;
 }
-
+.carrusel-item {
+  height: max-content;
+}
+.carrusel-pista {
+  display: flex;
+  padding: 1rem;
+  min-height: 700px;
+}
 .carrusel-item-container {
+  opacity: 0;
   transition: all 2s ease;
+}
+.active {
+  opacity: 5;
 }
 .right{
   animation: moverRight 1.8s;

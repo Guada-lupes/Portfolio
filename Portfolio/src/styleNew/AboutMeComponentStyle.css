@@ -44,8 +44,9 @@
 @media (max-width: 480px) {
   .about-section {
     margin-top: 30px;
-    padding: 0 1.2em;
+    width: 90%;
   }
+
   .about-container {
     flex-direction: column;
   }

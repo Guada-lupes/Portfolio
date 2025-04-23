@@ -11,7 +11,7 @@ export const WorkComponent = () => {
             {data.map((objeto) => (
           <div className="work-card-item-container" key={objeto.id}>
             <div className="work-card-img-container">
-              <img src={objeto.imagen} alt={objeto.alt} />
+              <img loading='lazy' src={objeto.imagen} alt={objeto.alt} />
             </div>
             <div className="work-card-title-container">
               <p>{objeto.titulo}</p>
