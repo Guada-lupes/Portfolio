@@ -10,6 +10,7 @@
 .contac-text-container {
   font-family: "proxima nova regular";
   text-align: center;
+  color: var(--text1);
 }
 .contac-text-container > h2 {
   font-size: 2em;

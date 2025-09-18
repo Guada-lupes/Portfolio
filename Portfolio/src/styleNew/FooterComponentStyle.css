@@ -41,6 +41,7 @@
 }
 .footer-icon {
   font-size: 1.3em;
+  color: var(--text1);
 }
 .privacy-content > h2 {
   font-size: 2em;

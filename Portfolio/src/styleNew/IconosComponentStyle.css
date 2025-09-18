@@ -8,6 +8,7 @@
   font-family: "proxima nova regular";
   font-size: 18px;
   text-align: center;
+  color: var(--text1)
 }
 .item-p > p:hover {
   font-weight: 900;

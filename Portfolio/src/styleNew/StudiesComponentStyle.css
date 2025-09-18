@@ -3,6 +3,7 @@
   justify-self: center;
   margin: auto;
   font-family: "proxima nova regular";
+  color: var(--text1);
 }
 .cards-section > h2 {
   justify-self: center;

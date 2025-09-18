@@ -1,3 +1,6 @@
+.responsive-carrusel-container{
+          color: var(--text1);
+}
 @media (max-width: 480px) {
   .responsive-carrusel-container {
     width: 90%;

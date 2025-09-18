@@ -11,23 +11,26 @@ import { ContactComponent } from "./componentNew/ContactComponent";
 import { IconosComponent } from "./componentNew/IconosComponent";
 import { ScrollToTopComponents } from "./componentNew/ScrollToTopComponents";
 import { TechnologiesComponent } from "./componentNew/TechnologiesComponent";
+import { ThemeProvider } from "./contex/ThemeProvider";
 
 function App() {
   return (
     <>
-      <HeaderComponent />
-      <ScrollToTopComponents/>
-      <Routes>
-        <Route path="/" element={<IconosComponent/> }/>
-        <Route path="/proyects" element={<ProyectsComponent/>}/>
-        <Route path="/studies" element={<StudiesComponent/>}/>
-        <Route path="/work" element={<WorkComponent/>}/>
-        <Route path="/others" element={<OthersComponent/>}/>
-        <Route path="/aboutme" element={<AboutMeComponent/>}/>
-        <Route path="/contact" element={<ContactComponent/>}/>
-        <Route path="/tech" element={<TechnologiesComponent/>}/>
-      </Routes>
-      <FooterComponent/>
+      <ThemeProvider>
+        <HeaderComponent />
+        <ScrollToTopComponents />
+        <Routes>
+          <Route path="/" element={<IconosComponent />} />
+          <Route path="/proyects" element={<ProyectsComponent />} />
+          <Route path="/studies" element={<StudiesComponent />} />
+          <Route path="/work" element={<WorkComponent />} />
+          <Route path="/others" element={<OthersComponent />} />
+          <Route path="/aboutme" element={<AboutMeComponent />} />
+          <Route path="/contact" element={<ContactComponent />} />
+          <Route path="/tech" element={<TechnologiesComponent />} />
+        </Routes>
+        <FooterComponent />
+      </ThemeProvider>
     </>
   );
 }

@@ -4,6 +4,7 @@
   margin: auto;
   margin-top: 60px;
   font-family: "proxima nova regular";
+  color: var(--text1);
 }
 .technologies-title{
     justify-self: center;

@@ -3,6 +3,7 @@
   justify-self: center;
   margin: auto;
   margin-top: 60px;
+  color: var(--text1);
 }
 .work-card-item-container {
   display: flex;

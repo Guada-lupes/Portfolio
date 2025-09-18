@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../styleNew/HeaderComponentStyle.css";
 import { useLocation } from "react-router-dom";
+import { ToggleThemeComponent } from "./ToggleThemeComponent";
 
 export const HeaderComponent = () => {
   const location = useLocation();
@@ -15,6 +16,7 @@ useEffect(()=>{
 
   return (
     <header className="header">
+<ToggleThemeComponent/>
       <div className="header-info">
         <h1>
           <Link to="/">Guadalupe Marándola</Link>

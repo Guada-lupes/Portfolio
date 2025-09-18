@@ -6,6 +6,7 @@
   animation-timing-function: ease;
   position: relative;
   overflow:hidden;
+  color: var(--text1);
 }
 .carrusel-item-container {
   flex: 0 0 100%;
