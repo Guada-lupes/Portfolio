@@ -1,5 +1,5 @@
-.header-info > h1 {
-  font-size: 69px;
+.name_title {
+  font-size: clamp(0.9rem, 5vw, 4.4rem);
   letter-spacing: 0.138889em;
   font-weight: 900;
   text-align: center;
@@ -7,12 +7,15 @@
   color: var(--text1);
   text-transform: uppercase;
 }
-.header-info > h1:hover {
+#compatibility {
+   visibility:hidden;
+}
+.name_title:hover {
   color: #83c5be;
   cursor: pointer;
 }
 .header-info > p {
-  font-size: 16px;
+  font-size: clamp(0.8rem, 1.5vw, 2rem);
   letter-spacing: 0.428571em;
   font-weight: 600;
   text-align: center;
@@ -32,7 +35,7 @@
 
 }
 .header-nav-ul > li {
-  font-size: 17px;
+  font-size: clamp(0.8rem, 1.3vw, 2.2rem);
   color: var(--text2);
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -48,11 +51,7 @@
   .header {
     overflow: hidden;
   }
-  .header-info > h1 {
-    font-size: 2em;
-  }
   .header-info > p {
-    font-size: 1em;
     margin: 0;
   }
   .header-nav {
@@ -61,9 +60,8 @@
   .header-nav > ul {
     margin: 0px;
     padding: 0px;
-  }
-  .header-nav-ul > li {
-    font-size: 0.8em;
+    flex-direction: column;
+    align-items: center;
   }
   .header-info {
     margin-bottom: 2em;
@@ -77,11 +75,7 @@
   .header {
     overflow: hidden;
   }
-  .header-info > h1 {
-    font-size: 2em;
-  }
   .header-info > p {
-    font-size: 0.9em;
     margin: 0;
   }
   .header-nav {
@@ -90,9 +84,6 @@
   .header-nav > ul {
     margin: 0px;
     padding: 0 50px;
-  }
-  .header-nav-ul > li {
-    font-size: 1em;
   }
   .header-info {
     margin-bottom: 2em;
@@ -103,21 +94,8 @@
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  .header-info > h1 {
-    font-size: 2.5em;
-  }
-  .header-info > p {
-    font-size: 0.9em;
-  }
-  .header-nav-ul > li {
-    font-size: 1em;
-  }
   .header-nav>ul {
     padding: 0 70px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1439px) {
-  .header-info > h1 {
-    font-size: 3em;
-  }
-}
+

@@ -9,6 +9,7 @@
   --text1: #121212;
   --text2: #666;
   --text3: #a8a8a8;
+  transition: all 1s ease-in-out;
 }
 [data-theme="dark"] {
   --bgColor: #2a2929;
@@ -24,6 +25,7 @@ body {
   line-height: 1.5;
   font-family: sans-serif;
   background-color: var(--bgColor);
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 img {

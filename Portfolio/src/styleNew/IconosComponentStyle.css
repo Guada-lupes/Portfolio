@@ -3,12 +3,20 @@
   align-self: center;
   margin-top: 60px;
 }
+.imagen {
+  opacity: 0;
+  scale: 0;
+  rotate: 360deg;
+}
+.icono-item{
+  width: clamp(9rem, 14vw, 10rem);
+}
 .item-p > p {
+  font-size: clamp();
   justify-self: center;
   font-family: "proxima nova regular";
-  font-size: 18px;
   text-align: center;
-  color: var(--text1)
+  color: var(--text1);
 }
 .item-p > p:hover {
   font-weight: 900;
@@ -38,11 +46,7 @@
     margin-top: 30px;
   }
   .icono-item {
-    width: 60%;
     align-self: center;
-  }
-  .item-p > p {
-    font-size: 1.2em;
   }
 }
 @media (max-width: 480) {
@@ -56,11 +60,7 @@
     margin-top: 30px;
   }
   .icono-item {
-    width: 60%;
     align-self: center;
-  }
-  .item-p > p {
-    font-size: 1.2em;
   }
 }
 @media (min-width: 481px) and (max-width: 1023px) {
@@ -77,10 +77,6 @@
     padding-bottom: 60px;
   }
   .icono-item {
-    width: 60%;
     justify-self: center;
-  }
-  .item-p > p {
-    font-size: 1.2em;
   }
 }
