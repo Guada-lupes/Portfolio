@@ -8,23 +8,27 @@
   color: var(--text1);
 }
 .carrusel-item-container {
-  flex: 0 0 100%;
+width: 25%;
+flex-shrink: 0;
+  /* flex: 0 0 100%; */
 }
 .carrusel-pista {
-  position: relative;
   display: flex;
-  flex-direction: row;
-  padding: 1rem;
+  transform: translateX(0);
+  /* Width se debe calcular automatico */
+  width: 400%; 
+  /* flex-direction: row; */
   min-height: 700px;
   gap: 3%;
+  /* overflow-x: auto;
   overflow-x: auto;
-  overflow-x: auto;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE y Edge */
+  scrollbar-width: none; Firefox 
+  -ms-overflow-style: none; IE y Edge */
 }
-.carrusel-pista::-webkit-scrollbar {
-  display: none; /* Chrome, Safari y otros Webkit */
-}
+/* .carrusel-pista::-webkit-scrollbar {
+  display: none; /* Chrome, Safari y otros Webkit 
+} */
+
 @keyframes aparecer {
   from {
     opacity: 0;
@@ -35,6 +39,7 @@
 }
 .buttons_container{
   position: relative;
+  overflow: hidden;
 }
 .carrusel-button {
   width: 4vw;
