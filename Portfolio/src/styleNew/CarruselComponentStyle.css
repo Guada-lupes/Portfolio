@@ -4,14 +4,14 @@
   margin-top: 60px;
   animation: aparecer 0.3s;
   animation-timing-function: ease;
-  position: relative;
-  overflow:hidden;
+  overflow: hidden;
   color: var(--text1);
 }
 .carrusel-item-container {
   flex: 0 0 100%;
 }
 .carrusel-pista {
+  position: relative;
   display: flex;
   flex-direction: row;
   padding: 1rem;
@@ -20,7 +20,7 @@
   overflow-x: auto;
   overflow-x: auto;
   scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* IE y Edge */
+  -ms-overflow-style: none; /* IE y Edge */
 }
 .carrusel-pista::-webkit-scrollbar {
   display: none; /* Chrome, Safari y otros Webkit */
@@ -33,54 +33,69 @@
     opacity: 100;
   }
 }
-.carrusel-container > button {
-  border: none;
-  background-color: inherit;
-  height: 30px;
+.buttons_container{
+  position: relative;
 }
-.carrusel-button-before {
-  position: absolute;
-  top: 10%;
-  /* left: -10%; */
+.carrusel-button {
+  width: 4vw;
+  height: 4vh;
+  z-index: 100;
 }
-.carrusel-button-after {
+.before {
   position: absolute;
-  top: 20%;
-  /* right: -10%; */
+  top: 25%;
+  left: 3%;
+}
+.after {
+  position: absolute;
+  top: 25%;
+  right: 3%;
 }
 
 .carrusel-item-container {
   transition: all 2s ease;
 }
-.right{
+.right {
   animation: moverRight 1.8s;
 }
-.left{
+.left {
   animation: moverLeft 1.8s;
 }
-.next{
-animation: goinOut 2s;
+.next {
+  animation: goinOut 2s;
 }
 /* animacion para slide que entra*/
-@keyframes moverRight{
-from{transform: translateX(-20%);}
-to{transform: translateX(0%);}
-}
-@keyframes moverLeft{
-  from{transform: translateX(20%);}
-  to{transform: translateX(0%);}
+@keyframes moverRight {
+  from {
+    transform: translateX(-20%);
   }
+  to {
+    transform: translateX(0%);
+  }
+}
+@keyframes moverLeft {
+  from {
+    transform: translateX(20%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
 /* animacion para slide que sale */
-@keyframes goinOut{
-  from{transform: translateX(0%);
-  to{transform: translateX(20%);}}
+@keyframes goinOut {
+  from {
+    transform: translateX(0%);
+    to {
+      transform: translateX(20%);
+    }
+  }
 }
 .carrusel-info-container > p {
   font-family: "proxima nova regular";
   font-size: 1.2rem;
   margin-top: 20px;
 }
-.carrusel-info-container{
+.carrusel-info-container {
   margin-top: 50px;
 }
 .carrusel-img-container {
