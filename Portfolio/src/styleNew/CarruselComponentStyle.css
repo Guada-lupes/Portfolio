@@ -2,7 +2,7 @@
   width: 72%;
   margin: auto;
   margin-top: 60px;
-  animation: aparecer 0.5s;
+  animation: aparecer 0.3s;
   animation-timing-function: ease;
   position: relative;
   overflow:hidden;

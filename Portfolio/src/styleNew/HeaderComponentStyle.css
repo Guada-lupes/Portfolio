@@ -12,10 +12,9 @@
 }
 .name_title:hover {
   color: #83c5be;
-  cursor: pointer;
 }
 .header-info > p {
-  font-size: clamp(0.8rem, 1.5vw, 2rem);
+  font-size: clamp(1rem, 1.5vw, 2rem);
   letter-spacing: 0.428571em;
   font-weight: 600;
   text-align: center;

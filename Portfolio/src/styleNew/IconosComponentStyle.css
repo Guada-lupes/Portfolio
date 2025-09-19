@@ -6,7 +6,6 @@
 .imagen {
   opacity: 0;
   scale: 0;
-  rotate: 360deg;
 }
 .icono-item{
   width: clamp(9rem, 14vw, 10rem);
@@ -29,12 +28,7 @@
   row-gap: 10%;
   justify-self: center;
 }
-.item-img > img {
-  transition: 1s ease;
-}
-.item-img > img:hover {
-  transform: scale(1.2, 1.2);
-}
+
 @media (max-width: 480px) {
   .iconos-container {
     display: flex;

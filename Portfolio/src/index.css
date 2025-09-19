@@ -50,4 +50,10 @@ a {
   text-decoration: none;
 }
 
+p{
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
+}
+h2{
+  font-size: clamp(1.5rem, 2vw, 1.8rem)
+}
 /* Variables */

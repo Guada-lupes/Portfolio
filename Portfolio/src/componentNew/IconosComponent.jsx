@@ -11,11 +11,11 @@ import { gsap } from "gsap";
 export const IconosComponent = () => {
   useEffect(() => {
     gsap.to(".imagen", {
-  scale: 1,
-  opacity: 1,
-  duration: 0.2,
-  stagger: 0.1,
-  ease: "circ.out",
+      scale: 1,
+      opacity: 1,
+      duration: 0.3,
+      stagger: 0.1,
+      ease: "circ.out",
     });
   }, []);
 
