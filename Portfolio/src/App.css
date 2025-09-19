@@ -15,11 +15,11 @@
 }
 @font-face {
   font-family: "proxima nova";
-  src: url(public/fonts/ProximaNovaScOsfRegular.otf) format("woff2");
+  src: url(/fonts/ProximaNovaScOsfRegular.woff2) format("woff2");
 }
 @font-face{
   font-family: "proxima nova regular";
-  src: url(public/fonts/ProximaNova-Regular.otf) format("woff2");
+  src: url(/fonts/ProximaNova-Regular.woff2) format("woff2");
 }
 
 /* Variables */
