@@ -12,7 +12,7 @@ const toggleTheme = () => {
     setTheme((prev)=> prev === "dark" ? "light" : "dark")
 }
     return (
-        <ThemeContext.Provider value={{toggleTheme}}>
+        <ThemeContext.Provider value={{theme, toggleTheme}}>
             {children}
         </ThemeContext.Provider>
     );

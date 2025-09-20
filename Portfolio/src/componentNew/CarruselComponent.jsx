@@ -6,46 +6,26 @@ import "../styleNew/CarruselComponentStyle.css";
 
 export const CarruselComponent = () => {
   const data = proyectosData();
-  // const [slideDirection, setSlideDirection] = useState(null);
-  // const [slideNext, setSlideNext] = useState(null);
-  // const [currentProyect, setCurrentProyect] = useState(0);
-  // const proyectsAmount = data.length;
-  // const pistaRef = useRef(null);
-
-  // function handleNext() {
-  //   if (pistaRef.current) {
-  //     pistaRef.current.scrollBy({
-  //       left: pistaRef.current.offsetWidth,
-  //       behavior: "smooth",
-  //     });
-  //   }
-  // }
-  // function handleBefore() {
-  //   if (pistaRef.current) {
-  //     pistaRef.current.scrollBy({
-  //       left: -pistaRef.current.offsetWidth,
-  //       behavior: "smooth",
-  //     });
-  //   }
-  // }
-  console.log("hola");
-
-  const [currentPosition, setCurrentPosition] = useState(0);
+  const [currentPosition, setCurrentPosition] = useState(1);
   const [translate, setTranslate] = useState(0);
+  const lastPage = data.length;
   function handleNext() {
-    console.log("before", currentPosition, translate);
-    if (currentPosition < data.length + 1) {
-      setCurrentPosition((prev) => prev + 1);
-      setTranslate((prev) => prev + 25);
+    if (currentPosition < data.length) {
+      const actualized = currentPosition + 1;
+      const actualizedT = translate + 25;
+      setCurrentPosition(actualized);
+      setTranslate(actualizedT);
     }
 
     console.log("next", currentPosition, translate);
   }
   function handleBefore() {
     console.log("before", currentPosition, translate);
-    if (currentPosition > 0) {
-      setCurrentPosition((prev) => prev - 1);
-      setTranslate((prev) => prev - 25);
+    if (currentPosition > 1) {
+      const actualized = currentPosition - 1;
+      const actualizedT = translate - 25;
+      setCurrentPosition(actualized);
+      setTranslate(actualizedT);
     }
 
     console.log("before", currentPosition, translate);
@@ -54,7 +34,7 @@ export const CarruselComponent = () => {
   return (
     <section className="carrusel-container">
       <div className="buttons_container">
-        {currentPosition > 0 && (
+        {currentPosition > 1 && (
           <div className="carrusel-button before" onClick={handleBefore}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +74,7 @@ export const CarruselComponent = () => {
             </div>
           ))}
         </div>
-        {currentPosition < data.length + 1 && (
+        {currentPosition < lastPage && (
           <div className="carrusel-button after" onClick={handleNext}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
