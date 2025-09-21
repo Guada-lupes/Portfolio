@@ -7,8 +7,7 @@
   flex-direction: column;
   color: var(--text1);
 }
-.others-cards-section > h2 {
-  font-size: 2em;
+.art_title {
   padding-bottom: 30px;
   font-family: "proxima nova regular";
   text-align: center;
@@ -59,9 +58,6 @@
   font-size: 1.2rem;
 }
 @media (max-width: 480px) {
-  .others-cards-section > h2 {
-    font-size: 1.4em;
-  }
   .others-cards-section {
     width: 100%;
     margin-top: 30px;
@@ -82,9 +78,6 @@
   }
 }
 @media (max-width: 480) {
-  .others-cards-section > h2 {
-    font-size: 1.4em;
-  }
   .others-cards-section {
     width: 100%;
     margin-top: 30px;
@@ -105,9 +98,6 @@
   }
 }
 @media (min-width: 481px) and (max-width: 1279px) {
-  .others-cards-section > h2 {
-    font-size: 1.4em;
-  }
   .others-cards-section {
     width: 90%;
     margin-top: 30px;

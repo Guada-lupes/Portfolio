@@ -1,12 +1,14 @@
 import React from 'react'
 import { experienciaData } from "../service/experiencia"
 import "../styleNew/WorkComponentStyle.css"
+import TitlesComponent from './TitlesComponenet'
 
 export const WorkComponent = () => {
     const data = experienciaData();
 
   return (
           <section className="work-cards-section">
+            <TitlesComponent texto={"Experiencia laboral"} class_name={""}/>
             <div className='work-cards-container'>
             {data.map((objeto) => (
           <div className="work-card-item-container" key={objeto.id}>

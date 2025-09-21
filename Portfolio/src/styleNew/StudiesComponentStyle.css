@@ -5,7 +5,7 @@
   font-family: "proxima nova regular";
   color: var(--text1);
 }
-.cards-section > h2 {
+.studies_title {
   justify-self: center;
   font-size: 2em;
   margin: 60px;

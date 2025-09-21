@@ -1,34 +1,8 @@
-import React from "react";
-import { useLayoutEffect } from "react";
+import TitlesComponent from "./TitlesComponenet";
 import foto1 from "../assets/FotoPortfolio.png";
 import "../styleNew/AboutMeComponentStyle.css";
-import { gsap } from "gsap";
-import { SplitText } from "gsap/all";
 
 export const AboutMeComponent = () => {
-
-useLayoutEffect(()=>{
-  document.fonts.ready.then(() => {
-  gsap.registerPlugin(SplitText);
-    let split = SplitText.create(".article-h2", {
-      type: "words, chars",
-      onSplit: (self) => {
-        gsap.from(self.chars, {
-          duration: 1,
-          ease: "back.out",
-          rotation: "random(-30, 30)",
-          yPercent: "random([-100, 100])",
-          autoAlpha: 0,
-          stagger: {
-            from: "random",
-            amount: 0.03,
-          },
-        });
-      },
-    });
-  });
-}, [])
-
   return (
     <section className="about-section">
       <div className="about-container">
@@ -36,7 +10,10 @@ useLayoutEffect(()=>{
           <img loading="lazy" src={foto1} alt="imagen de perfil" />
         </div>
         <article className="about-article">
-          <h2 className="article-h2">Hola, soy Guadalupe Marándola</h2>
+          <TitlesComponent
+            texto={"Hola, soy Guadalupe Marándola"}
+            class_name={"article-h2"}
+          />
           <p className="article-p">
             En 2024 me he embarcado en un nuevo proyecto profesional,
             convertirme en <span>Desarroladora Web Front-End</span>. Siempre me

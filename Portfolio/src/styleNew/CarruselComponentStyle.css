@@ -8,14 +8,11 @@
   color: var(--text1);
 }
 .carrusel-item-container {
-width: 25%;
 flex-shrink: 0;
 }
 .carrusel-pista {
   display: flex;
   transform: translateX(0);
-  /* Width se debe calcular automatico */
-  width: 400%; 
   min-height: 700px;
 }
 
@@ -32,58 +29,21 @@ flex-shrink: 0;
   overflow: hidden;
 }
 .carrusel-button {
-  width: 4vw;
-  height: 4vh;
+  width: 1rem;
+
   z-index: 100;
 }
 .before {
   position: absolute;
-  top: 25%;
-  left: 3%;
+  left: 2%;
 }
 .after {
   position: absolute;
-  top: 25%;
-  right: 3%;
+  right: 2%;
 }
 
 .carrusel-item-container {
   transition: all 2s ease;
-}
-.right {
-  animation: moverRight 1.8s;
-}
-.left {
-  animation: moverLeft 1.8s;
-}
-.next {
-  animation: goinOut 2s;
-}
-/* animacion para slide que entra*/
-@keyframes moverRight {
-  from {
-    transform: translateX(-20%);
-  }
-  to {
-    transform: translateX(0%);
-  }
-}
-@keyframes moverLeft {
-  from {
-    transform: translateX(20%);
-  }
-  to {
-    transform: translateX(0%);
-  }
-}
-/* animacion para slide que sale */
-@keyframes goinOut {
-  from {
-    transform: translateX(0%);
-    to {
-      transform: translateX(20%);
-    }
-  }
 }
 .carrusel-info-container > p {
   font-family: "proxima nova regular";
@@ -93,34 +53,13 @@ flex-shrink: 0;
 .carrusel-info-container {
   margin-top: 50px;
 }
-.carrusel-img-container {
-  /* height: 500px; */
-}
 .carrusel-img-container > img {
   object-fit: contain;
 }
-@media (max-width: 480px) {
+@media (max-width: 780px) {
   .carrusel-container {
     display: none;
   }
 }
-@media (min-width: 481px) and (max-width: 1023px) {
-  .carrusel-container {
-    display: none;
-  }
-}
-@media (min-width: 1024px) and (max-width: 1279px) {
-  .carrusel-button-before {
-    position: relative;
-    top: 120px;
-    left: 30px;
-  }
-  .carrusel-button-after {
-    position: relative;
-    top: 120px;
-    right: 30px;
-  }
-  .carrusel-img-container {
-    /* height: 300px; */
-  }
-}
+
+

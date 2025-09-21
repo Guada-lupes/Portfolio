@@ -1,5 +1,6 @@
 import React from "react";
 import { otrosData } from "../service/otros";
+import TitlesComponent from "./TitlesComponenet";
 import "../styleNew/OthersComponentStyle.css";
 
 export const OthersComponent = () => {
@@ -8,8 +9,7 @@ export const OthersComponent = () => {
   return (
     <>
     <section className="others-cards-section">
-    <h2>Arte y mixmedia</h2>
-    <p>ff</p>
+      <TitlesComponent texto={"Arte y mixmedia"} class_name={"art_title"}/>
       <div className='others-cards-container'>
       {data.map((objeto) => (
         <div className="others-card-item-container" key={objeto.id}>

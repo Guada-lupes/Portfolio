@@ -1,5 +1,6 @@
 import React from "react";
 import { technologiesData } from "../service/tecnnologies";
+import TitlesComponent from "./TitlesComponenet";
 import "../styleNew/TechnologiesComponentStyle.css";
 
 export const TechnologiesComponent = () => {
@@ -7,7 +8,7 @@ export const TechnologiesComponent = () => {
 
   return (
     <section className="technologies-section">
-      <h3 className="technologies-title">Tecnologías y herramientas</h3>
+      <TitlesComponent texto={"Tecnologías y herramientas"} class_name={"technologies-title"}/>
       <div className="technologies-container">
           {data.map((elemento, index) => (
             <div className="technologies-item" key={index}>

@@ -1,6 +1,7 @@
 import React from "react";
 import { formacionData } from "../service/formacion";
 import { formacionEspecificaData } from "../service/formacion";
+import TitlesComponent from "./TitlesComponenet";
 import "../styleNew/StudiesComponentStyle.css";
 
 export const StudiesComponent = () => {
@@ -9,7 +10,7 @@ export const StudiesComponent = () => {
   return (
     <>
       <section className="cards-section">
-        <h2>Formación específica</h2>
+        <TitlesComponent texto={"Formación específica"} class_name={"studies_title"}/>
             <div className="card-especific-container">
             {data2.map((objeto, index) => (
               <div className="card-especific-item" key={objeto.id}>

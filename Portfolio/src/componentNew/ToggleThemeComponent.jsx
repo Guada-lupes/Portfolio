@@ -5,6 +5,7 @@ export const ToggleThemeComponent = () => {
 const {toggleTheme} = useTheme();
     return (
         <div>
+            
             <button onClick={toggleTheme}>Cambiar theme</button>
         </div>
     );
