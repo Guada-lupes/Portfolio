@@ -1,14 +1,19 @@
 .carrusel-container {
   width: 72%;
   margin: auto;
-  margin-top: 60px;
   animation: aparecer 0.3s;
   animation-timing-function: ease;
   overflow: hidden;
   color: var(--text1);
 }
+.desarrollos_title {
+  margin: 60px;
+  color: var(--text1);
+  font-family: "proxima nova regular";
+  text-align: center;
+}
 .carrusel-item-container {
-flex-shrink: 0;
+  flex-shrink: 0;
 }
 .carrusel-pista {
   display: flex;
@@ -24,7 +29,7 @@ flex-shrink: 0;
     opacity: 100;
   }
 }
-.buttons_container{
+.buttons_container {
   position: relative;
   overflow: hidden;
 }
@@ -61,5 +66,3 @@ flex-shrink: 0;
     display: none;
   }
 }
-
-

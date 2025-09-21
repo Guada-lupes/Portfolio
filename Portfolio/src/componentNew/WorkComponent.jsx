@@ -8,7 +8,7 @@ export const WorkComponent = () => {
 
   return (
           <section className="work-cards-section">
-            <TitlesComponent texto={"Experiencia laboral"} class_name={""}/>
+            <TitlesComponent texto={"Experiencia laboral"} class_name={"work_title"}/>
             <div className='work-cards-container'>
             {data.map((objeto) => (
           <div className="work-card-item-container" key={objeto.id}>

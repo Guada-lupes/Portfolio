@@ -1,15 +1,20 @@
-import React from 'react'
-import { proyectosData } from '../service/proyectos'
-import { CarruselComponent } from './CarruselComponent';
-import { ResponsiveProyectsComponent } from './ResponsiveProyectsComponent';
+import React from "react";
+import TitlesComponent from "../componentNew/TitlesComponenet";
+import { proyectosData } from "../service/proyectos";
+import { CarruselComponent } from "./CarruselComponent";
+import { ResponsiveProyectsComponent } from "./ResponsiveProyectsComponent";
 
 export const ProyectsComponent = () => {
-    const data = proyectosData();
-    
-    return (
-      <>
-            <CarruselComponent/>
-            <ResponsiveProyectsComponent/>
-      </>
-  )
-}
+  const data = proyectosData();
+
+  return (
+    <>
+      <TitlesComponent
+        texto={"Desarrollos Web"}
+        class_name={"desarrollos_title"}
+      />
+      <CarruselComponent />
+      <ResponsiveProyectsComponent />
+    </>
+  );
+};

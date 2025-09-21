@@ -2,13 +2,12 @@
   width: 72%;
   justify-self: center;
   margin: auto;
-  margin-top: 60px;
   display: flex;
   flex-direction: column;
   color: var(--text1);
 }
 .art_title {
-  padding-bottom: 30px;
+  margin: 60px;
   font-family: "proxima nova regular";
   text-align: center;
 }

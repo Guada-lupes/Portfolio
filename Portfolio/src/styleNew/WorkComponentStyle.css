@@ -2,8 +2,12 @@
   width: 72%;
   justify-self: center;
   margin: auto;
-  margin-top: 60px;
   color: var(--text1);
+  font-family: "proxima nova regular";
+}
+.work_title{
+justify-self: center;
+margin: 60px;
 }
 .work-card-item-container {
   display: flex;
@@ -43,11 +47,11 @@
   font-size: 1.2em;
   height: 80px;
 }
-.work-card-title-container{
+.work-card-title-container {
   padding: 0 10px;
   min-height: 80px;
 }
-.work-card-info-container{
+.work-card-info-container {
   padding: 10px;
 }
 .work-card-info-container > p {
