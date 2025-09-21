@@ -9,26 +9,23 @@ export const CarruselComponent = () => {
   const [currentPosition, setCurrentPosition] = useState(1);
   const [translate, setTranslate] = useState(0);
   const lastPage = data.length;
+
   function handleNext() {
     if (currentPosition < data.length) {
       const actualized = currentPosition + 1;
       const actualizedT = translate + 25;
-      setCurrentPosition(actualized);
+      setCurrentPosition((actualized));
       setTranslate(actualizedT);
     }
-
-    console.log("next", currentPosition, translate);
   }
+
   function handleBefore() {
-    console.log("before", currentPosition, translate);
     if (currentPosition > 1) {
       const actualized = currentPosition - 1;
       const actualizedT = translate - 25;
       setCurrentPosition(actualized);
       setTranslate(actualizedT);
     }
-
-    console.log("before", currentPosition, translate);
   }
 
   return (
