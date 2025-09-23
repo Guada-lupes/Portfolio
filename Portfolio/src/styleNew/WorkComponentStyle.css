@@ -5,9 +5,9 @@
   color: var(--text1);
   font-family: "proxima nova regular";
 }
-.work_title{
-justify-self: center;
-margin: 60px;
+.work_title {
+  justify-self: center;
+  margin: 60px 0 30px;
 }
 .work-card-item-container {
   display: flex;
@@ -93,7 +93,7 @@ margin: 60px;
   .work-cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    gap: 2rem;
   }
   .work-card-img-container {
     height: 200px;

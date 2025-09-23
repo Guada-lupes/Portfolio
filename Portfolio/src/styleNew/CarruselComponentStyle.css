@@ -7,7 +7,7 @@
   color: var(--text1);
 }
 .desarrollos_title {
-  margin: 60px;
+    margin: 60px 0 30px;
   color: var(--text1);
   font-family: "proxima nova regular";
   text-align: center;

@@ -2,19 +2,18 @@
   width: 72%;
   justify-self: center;
   margin: auto;
-  margin-top: 60px;
   font-family: "proxima nova regular";
   color: var(--text1);
 }
 .technologies-title{
     justify-self: center;
+        margin: 60px 0 30px;
 }
 .technologies-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   justify-items: center;
   row-gap: 50px;
-  margin-top: 60px;
 }
 .technologies-item {
   display: flex;

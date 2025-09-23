@@ -31,7 +31,7 @@ const formacionEspecifica = [
     alt: "logo de la academia",
     titulo: "Desarrollo Web Front-End",
     descripcion: "2025",
-    aprendizajes: "Formación práctica intensiva ....",
+    aprendizajes: "Formación práctica intensiva",
     em:"Code Space",
 },
 ];
