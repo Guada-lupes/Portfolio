@@ -2,6 +2,7 @@ import React from 'react'
 import { experienciaData } from "../service/experiencia"
 import "../styleNew/WorkComponentStyle.css"
 import TitlesComponent from './TitlesComponenet'
+import BackButton from './BackButton'
 
 export const WorkComponent = () => {
     const data = experienciaData();
@@ -24,6 +25,7 @@ export const WorkComponent = () => {
           </div>
         ))}
               </div> 
+              <BackButton/>
       </section>
   )
 }

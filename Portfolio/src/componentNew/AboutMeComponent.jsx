@@ -1,6 +1,7 @@
 import TitlesComponent from "./TitlesComponenet";
 import foto1 from "../assets/FotoPortfolio.png";
 import "../styleNew/AboutMeComponentStyle.css";
+import BackButton from "./BackButton";
 
 export const AboutMeComponent = () => {
   return (
@@ -41,7 +42,9 @@ export const AboutMeComponent = () => {
             .
           </p>
         </article>
+        
       </div>
+      <BackButton/>
     </section>
   );
 };

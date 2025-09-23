@@ -3,6 +3,7 @@ import TitlesComponent from "../componentNew/TitlesComponenet";
 import { proyectosData } from "../service/proyectos";
 import { CarruselComponent } from "./CarruselComponent";
 import { ResponsiveProyectsComponent } from "./ResponsiveProyectsComponent";
+import BackButton from "./BackButton";
 
 export const ProyectsComponent = () => {
   const data = proyectosData();
@@ -15,6 +16,7 @@ export const ProyectsComponent = () => {
       />
       <CarruselComponent />
       <ResponsiveProyectsComponent />
+<BackButton/>
     </>
   );
 };

@@ -1,4 +1,5 @@
 import "../styleNew/ContactComponentStyle.css";
+import BackButton from "./BackButton";
 import TitlesComponent from "./TitlesComponenet";
 
 
@@ -35,6 +36,7 @@ export const ContactComponent = () => {
           Cargando…
         </iframe>
       </div>
+      <BackButton/>
     </section>
   );
 };

@@ -2,6 +2,7 @@ import React from "react";
 import { otrosData } from "../service/otros";
 import TitlesComponent from "./TitlesComponenet";
 import "../styleNew/OthersComponentStyle.css";
+import BackButton from "./BackButton";
 
 export const OthersComponent = () => {
   const data = otrosData();
@@ -22,6 +23,7 @@ export const OthersComponent = () => {
         </div>
       ))}
       </div>
+      <BackButton/>
     </section>
   </>
   );

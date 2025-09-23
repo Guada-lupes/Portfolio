@@ -2,6 +2,7 @@ import React from "react";
 import { technologiesData } from "../service/tecnnologies";
 import TitlesComponent from "./TitlesComponenet";
 import "../styleNew/TechnologiesComponentStyle.css";
+import BackButton from "./BackButton";
 
 export const TechnologiesComponent = () => {
   const data = technologiesData();
@@ -17,6 +18,7 @@ export const TechnologiesComponent = () => {
             </div>
           ))}
         </div>
+        <BackButton/>
     </section>
   );
 };

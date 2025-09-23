@@ -1,3 +1,8 @@
+@media (min-width: 781px){
+  .responsive-carrusel-item-container{
+    display: none;
+  }
+}
 .responsive-carrusel-item-container {
   animation: aparecer 0.5s ease-in;
 }
@@ -38,11 +43,6 @@
     object-fit: contain;
   }
 }
-@media (min-width: 781) {
-  .responsive-carrusel-container {
-    display: none;
-  }
-}
 @media (min-width: 481px) and (max-width: 780px) {
   .responsive-carrusel-container {
     width: 80%;
@@ -68,8 +68,4 @@
     object-fit: contain;
   }
 }
-@media (min-width: 1024px) {
-  .responsive-carrusel-container {
-    display: none;
-  }
-}
+

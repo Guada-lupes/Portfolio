@@ -3,6 +3,7 @@ import { formacionData } from "../service/formacion";
 import { formacionEspecificaData } from "../service/formacion";
 import TitlesComponent from "./TitlesComponenet";
 import "../styleNew/StudiesComponentStyle.css";
+import BackButton from "./BackButton";
 
 export const StudiesComponent = () => {
   const data1 = formacionData();
@@ -48,6 +49,7 @@ export const StudiesComponent = () => {
             ))}
           </div>
         </div>
+        <BackButton/>
       </section>
     </>
   );

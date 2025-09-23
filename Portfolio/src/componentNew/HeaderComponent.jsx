@@ -11,46 +11,46 @@ export const HeaderComponent = () => {
   const location = useLocation();
   const url = location.pathname;
 
-useLayoutEffect(() => {
-  document.fonts.ready.then(() => {
-    gsap.registerPlugin(SplitText);
-    
-    const split = new SplitText("#compatibility", { type: "words, chars" });
-    const tl = gsap.timeline();
+  useLayoutEffect(() => {
+    document.fonts.ready.then(() => {
+      gsap.registerPlugin(SplitText);
 
-    tl.set("#compatibility", { autoAlpha: 1 });
+      const split = new SplitText("#compatibility", { type: "words, chars" });
+      const tl = gsap.timeline();
 
-    split.chars.forEach((char, i) => {
-      tl.fromTo(
-        char,
-        {
-          transformOrigin: "center -160px",
-          z: 0.1,
-          rotation: Math.random() < 0.5 ? 90 : -90,
-        },
-        {
-          rotation: 0,
-          ease: "elastic.out",
-          duration: 2.4,
-        },
-        0.3 + i * 0.06
-      );
+      tl.set("#compatibility", { autoAlpha: 1 });
+
+      split.chars.forEach((char, i) => {
+        tl.fromTo(
+          char,
+          {
+            transformOrigin: "center -160px",
+            z: 0.1,
+            rotation: Math.random() < 0.5 ? 90 : -90,
+          },
+          {
+            rotation: 0,
+            ease: "elastic.out",
+            duration: 2.4,
+          },
+          0.3 + i * 0.06
+        );
+      });
     });
-  });
-}, []);
+  }, []);
 
-  useEffect(() => {
-    
-  }, [url]);
+  useEffect(() => {}, [url]);
 
   return (
     <header className="header">
       <ToggleThemeComponent />
       <div className="header-info">
         <Link to="/">
-          <h1 id="compatibility" className="name_title"> Guadalupe Marándola</h1>
+          <h1 id="compatibility" className="name_title">
+            {" "}
+            Guadalupe Marándola
+          </h1>
         </Link>
-
         <p>Desarrollo Web + Educación</p>
       </div>
       {/* navegador para escritorio */}
