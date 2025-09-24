@@ -29,10 +29,10 @@ const formacionEspecifica = [
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbjtb2yk4262Y5bu2gPjTHYKjry-hWf1m9Eg&s",
     id:1,
     alt: "logo de la academia",
-    titulo: "Desarrollo Web Front-End",
+    titulo: "Bootcamp Her-Tech Front End Development",
     descripcion: "2025",
-    aprendizajes: "Formación práctica intensiva",
-    em:"Code Space",
+    aprendizajes: "Formación práctica intensiva en Fundamentos de programación, HTML y CSS avanzado, Javascript y manipulación del DOM, React, Diseño UI/UX (350hs).",
+    em:"Code Space Academy",
 },
 ];
 
