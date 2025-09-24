@@ -18,7 +18,8 @@
 }
 .card-especific-item {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   gap: 30px;
   box-shadow: 1px 1px 3px 1px gray;
   border-radius: 5px;
@@ -60,6 +61,11 @@
   transition: transform 0.5s ease;
   &:hover{
     transform: translatey(-5%);
+  }
+}
+@media(min-width: 780px){
+  .card-especific-item {
+    flex-direction: row;
   }
 }
 @keyframes aparecer {
@@ -126,7 +132,6 @@
 @media (min-width: 481px) and (max-width: 1279px) {
   .cards-section {
     width: 90%;
-    margin-top: 60px;
   }
   .cards-container {
     display: grid;

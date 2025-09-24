@@ -11,7 +11,16 @@ export const TechnologiesComponent = () => {
     <section className="technologies-section">
       <TitlesComponent texto={"Tecnologías y herramientas"} class_name={"technologies-title"}/>
       <div className="technologies-container">
-          {data.map((elemento, index) => (
+          {data.tecnologias.map((elemento, index) => (
+            <div className="technologies-item" key={index}>
+              <div className="technologies-icon">{elemento.icon}</div>
+              <p className="technologies-name">{elemento.name}</p>
+            </div>
+          ))}
+        </div>
+        <TitlesComponent texto={"Conocimientos"} class_name={"technologies-title"}/>
+              <div className="technologies-container">
+          {data.conocimientos.map((elemento, index) => (
             <div className="technologies-item" key={index}>
               <div className="technologies-icon">{elemento.icon}</div>
               <p className="technologies-name">{elemento.name}</p>

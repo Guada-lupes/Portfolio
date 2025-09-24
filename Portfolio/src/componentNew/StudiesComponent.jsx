@@ -31,7 +31,10 @@ export const StudiesComponent = () => {
             </div>
           ))}
         </div>
-        <h2>Formación académica</h2>
+        <TitlesComponent
+          texto={"Formación académica"}
+          class_name={"studies_title"}
+        />
         <div className="card-especific-container">
           <div className="cards-container">
             {data1.map((objeto) => (
@@ -49,7 +52,7 @@ export const StudiesComponent = () => {
             ))}
           </div>
         </div>
-        <BackButton/>
+        <BackButton />
       </section>
     </>
   );

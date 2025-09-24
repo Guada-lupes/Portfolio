@@ -1,10 +1,30 @@
-@media (min-width: 781px){
-  .responsive-carrusel-item-container{
+@media (min-width: 781px) {
+  .responsive-carrusel-item-container {
     display: none;
   }
 }
 .responsive-carrusel-item-container {
   animation: aparecer 0.5s ease-in;
+  font-family: "proxima nova regular";
+}
+.carrusel_ul {
+  padding-top: 1rem;
+  li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+  }
+}
+.carrusel_ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: var(--text1);
+  border-radius: 2px;
 }
 @keyframes aparecer {
   from {
@@ -33,14 +53,22 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin: 0.35%;
   }
   .responsive-carrusel-info-container > p {
     font-family: "proxima nova regular";
-    font-size: 1.2rem;
     margin-top: 20px;
   }
   .responsive-carrusel-img-container > img {
     object-fit: contain;
+  }
+  .responsive-carrusel-img-container {
+    aspect-ratio: 16/9;
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 }
 @media (min-width: 481px) and (max-width: 780px) {
@@ -58,14 +86,21 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin: 0.35%;
   }
   .responsive-carrusel-info-container > p {
     font-family: "proxima nova regular";
-    font-size: 1.2rem;
     margin-top: 20px;
   }
   .responsive-carrusel-img-container > img {
     object-fit: contain;
   }
+  .responsive-carrusel-img-container {
+    aspect-ratio: 16/9;
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 }
-

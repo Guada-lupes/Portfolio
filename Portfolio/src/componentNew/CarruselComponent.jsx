@@ -32,7 +32,7 @@ export const CarruselComponent = () => {
   function handleNext() {
     if (currentPosition < data.length) {
       const actualized = currentPosition + 1;
-      const actualizedT = translate + 25;
+      const actualizedT = translate + 100 / lastPage;
       setCurrentPosition(actualized);
       setTranslate(actualizedT);
     }
@@ -40,11 +40,16 @@ export const CarruselComponent = () => {
   function handleBefore() {
     if (currentPosition > 1) {
       const actualized = currentPosition - 1;
-      const actualizedT = translate - 25;
+      const actualizedT = translate - 100 / lastPage;
       setCurrentPosition(actualized);
       setTranslate(actualizedT);
     }
   }
+  const isVideo = (src) => {
+    const videoExtensions = ["mp4", "webm", "ogg", "avi", "mov"];
+    const extension = src.split(".").pop().toLowerCase();
+    return videoExtensions.includes(extension);
+  };
 
   return (
     <section className="carrusel-container">
@@ -84,16 +89,31 @@ export const CarruselComponent = () => {
             <div
               className={"carrusel-item-container"}
               key={index}
-              style={{ width: `${100 / lastPage}%` }}
+              style={{ width: `${Math.floor(100 / lastPage)}%` }}
             >
               <div className="carrusel-item">
                 <div className="carrusel-img-container">
-                  <img src={objeto.imagen} alt={objeto.alt} />
+                  {isVideo(objeto.imagen) ? (
+                    <video controls muted src={objeto.imagen} />
+                  ) : (
+                    <img src={objeto.imagen} alt={objeto.alt} />
+                  )}
                 </div>
                 <div className="carrusel-info-container">
                   <p>{objeto.descripcion}</p>
+                  {objeto.funcionalidades ? (
+                    <ul className="carrusel_ul">
+                      {objeto.funcionalidades.map((e, i) => (
+                        <li key={i}>
+                          <p>{e}</p>
+                        </li>
+                      ))}{" "}
+                    </ul>
+                  ) : (
+                    ""
+                  )}
                 </div>
-                <GitHubLogoPath path={objeto.em} />
+                {objeto.em ? <GitHubLogoPath path={objeto.em} /> : ""}
               </div>
             </div>
           ))}

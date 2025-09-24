@@ -1,29 +1,28 @@
-import foto1 from "../assets/BookSpace.png"
-import foto2 from "../assets/TiendaReact.png"
-import foto3 from "../assets/TiendaJavaScript.png"
-import foto4 from "../assets/RockstarReplica.png"
+import video1 from "../assets/planeta.mp4"
+import video2 from "../assets/catalogo.mp4"
+import foto3 from "../assets/BookSpace.png"
 
 const proyectos = [
             {
-        imagen: foto1,
+        imagen: video1,
         id:1,
         alt: "imagen del proyecto",
         titulo: "El Planeta de las Profesiones",
         descripcion: "El Planeta de las Profesiones es una Single Page Application (SPA) educativa que ofrece una experiencia gamificada para explorar el mercado laboral. Funcionalidades principales:",
-        funcionalidades: ["Gestión de usuario: login/logout, progreso en el juego, desbloqueo de tribus y ocupaciones favoritas, implementado con useContext y useReducer", "Persistencia de datos: almacenamiento en localStorage para mantener la sesión y el avance del jugador", "Estructura de contenidos dinámica: un objeto-árbol con fases, retos y descripciones que se renderiza automáticamente según el progreso.", "Interacciones enriquecidas: integración de librerías de Drag & Drop para retos de clasificación y ordenamiento", "Datos reales: contenidos extraídos de informes del SEPE, con enlaces a fichas profesionales descargables."],
-        em: "https://github.com/Guada-lupes",
+        funcionalidades: ["Gestión de usuario: login/logout, progreso en el juego, desbloqueo de tribus y ocupaciones favoritas, implementado con useContext y useReducer", "Persistencia de datos: almacenamiento en localStorage para mantener la sesión y el avance del jugador", "Estructura de contenidos dinámica: un objeto-árbol con fases, retos y descripciones que se renderiza automáticamente según el progreso.", "Interacciones enriquecidas: integración de la librería 'hello pangea/dnd' para el drag and drop en retos de clasificación y ordenamiento.", "Datos reales: contenidos extraídos de informes del SEPE, con enlaces a fichas profesionales descargables."],
+        em: "https://github.com/Guada-lupes/OccupationsGame",
     },
         {
-        imagen: foto1,
+        imagen: video2,
         id:1,
         alt: "imagen del proyecto",
         titulo: "Catálogo Digital",
         descripcion: "Catálogo digital inmobiliario personalizable. Funcionalidades principales:",
         funcionalidades: ["Formulario de configuración: selección de agencia (logo y color corporativo), idioma (ES/EN), publicidad opcional y zonas.", "Modo FlippedBook online: virtualización dinámica que carga 5 páginas a la vez según la posición, para catálogos de hasta 450 viviendas sin reducir rendimiento", "Versión PDF imprimible: generación automática de revista digital usando React-PDF.", "Integración con la API de ZODDAK mediante peticiones asíncronas y token"],
-        em: "https://github.com/Guada-lupes",
+        em: "",
     },
     {
-        imagen: foto1,
+        imagen: foto3,
         id:1,
         alt: "imagen del proyecto",
         titulo: "BookSpace",

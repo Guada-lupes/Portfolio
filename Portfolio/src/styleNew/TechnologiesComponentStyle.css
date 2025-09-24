@@ -12,12 +12,12 @@
 }
 .technologies-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   justify-items: center;
   gap: 2rem;
 }
 .technologies-item {
-
+text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,6 +42,7 @@
   width: 5em;
   height: 6em;
   transition: transform .3s ease;
+  align-content: center;
 }
 .technologies-item:hover .technologies-icon{
   transform: rotate(15deg);
@@ -49,4 +50,9 @@
 .technologies-icon > svg {
   width: 100%;
   height: auto;
+}
+@media(max-width: 480px){
+  .technologies-container {
+      grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  }
 }

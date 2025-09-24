@@ -1,9 +1,10 @@
 import foto1 from "../assets/empleabilidad3.jpeg"
 import foto3 from "../assets/empleabilidad1.jpeg";
 import foto2 from "../assets/orobal1.jpeg";
+import zoddak from "../assets/zoddak.jpg"
 
 const experiencia = [
-    {imagen: foto1,
+    {imagen: zoddak,
         id: 1,
         alt: "imagen de una clase",
         titulo: "Desarrolladora Front End",
