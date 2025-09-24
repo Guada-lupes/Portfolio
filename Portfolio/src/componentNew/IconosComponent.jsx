@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import foto1 from "../assets/obrera.png";
-import foto2 from "../assets/ordenador.png";
-import foto3 from "../assets/caja.png";
-import foto4 from "../assets/libro.png";
-import foto5 from "../assets/herramientas.png";
+import foto1 from "../assets/obrera.avif";
+import foto2 from "../assets/ordenador.avif";
+import foto3 from "../assets/caja.avif";
+import foto4 from "../assets/libro.avif";
+import foto5 from "../assets/herramientas.avif";
 import { Link } from "react-router-dom";
 import "../styleNew/IconosComponentStyle.css";
 import { gsap } from "gsap";

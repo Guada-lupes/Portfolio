@@ -1,15 +1,13 @@
-import icon1 from "../assets/javascript-icon.png";
-import icon2 from "../assets/html5-icon.png";
-import icon3 from "../assets/css3-icon.png";
-import icon4 from "../assets/git-icon.png";
-import icon5 from "../assets/github-icon.png";
-import npm from "../assets/npm-logo-red.png"
-import vercel from "../assets/vercel.png"
-import figma from "../assets/figma.png"
-import http from "../assets/http.png"
-import api from "../assets/api.png"
-import page from "../assets/page.png"
-import css from "../assets/css.png"
+import icon1 from "../assets/javascript-icon.avif";
+import icon2 from "../assets/html5-icon.avif";
+import icon3 from "../assets/css3-icon.avif";
+import npm from "../assets/npm-logo-red.avif"
+import vercel from "../assets/vercel.avif"
+import figma from "../assets/figma.avif"
+import http from "../assets/http.avif"
+import api from "../assets/api.avif"
+import page from "../assets/page.avif"
+import css from "../assets/css.avif"
 
 const iconos = {
   conocimientos: [
@@ -38,6 +36,10 @@ const iconos = {
     {
       name: "CSS3",
       icon: <img src={icon3} alt="icono de css5" />,
+    },
+            {
+      name: "Javascript",
+      icon: <img src={icon1} alt="icono de javascript" />,
     },
     {
       name: "Sass",

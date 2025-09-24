@@ -72,7 +72,7 @@
   .work-cards-container {
     display: flex;
     flex-direction: column;
-  gap: 4%;
+    gap: 1rem;
   }
   .work-card-img-container {
     height: 200px;
@@ -99,7 +99,7 @@
   .work-cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 4%;
+    gap: 4%;
   }
   .work-card-img-container {
     height: 200px;

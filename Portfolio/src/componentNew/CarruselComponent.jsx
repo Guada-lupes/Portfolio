@@ -26,7 +26,6 @@ export const CarruselComponent = () => {
       after: containerWidth - (buttonSize + margin + distance),
       width: buttonSize,
     });
-    console.log(containerWidth, buttonSize, margin, measure);
   }
   //handles de los botones
   function handleNext() {
@@ -46,6 +45,7 @@ export const CarruselComponent = () => {
     }
   }
   const isVideo = (src) => {
+    if (!src) return false;
     const videoExtensions = ["mp4", "webm", "ogg", "avi", "mov"];
     const extension = src.split(".").pop().toLowerCase();
     return videoExtensions.includes(extension);
@@ -94,7 +94,10 @@ export const CarruselComponent = () => {
               <div className="carrusel-item">
                 <div className="carrusel-img-container">
                   {isVideo(objeto.imagen) ? (
-                    <video controls muted src={objeto.imagen} />
+                    <video controls muted>
+                      <source src={objeto.imagen} type="video/mp4" />
+                      {<source src={objeto.imagen_dos} type="video/webm" />}
+                    </video>
                   ) : (
                     <img src={objeto.imagen} alt={objeto.alt} />
                   )}

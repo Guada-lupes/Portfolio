@@ -1,11 +1,11 @@
-import foto1 from "../assets/cardones.jpeg";
-import foto2 from "../assets/vieja.jpeg";
-import foto3 from "../assets/planeta.jpeg";
-import foto4 from "../assets/globo.jpg";
-import foto5 from "../assets/crater.jpg";
-import foto6 from "../assets/canerias.jpg";
-import foto7 from "../assets/cajon.jpeg";
-import foto8 from "../assets/insectos.jpeg";
+import foto1 from "../assets/cardones.avif";
+import foto2 from "../assets/vieja.avif";
+import foto3 from "../assets/planeta.avif";
+import foto4 from "../assets/globo.avif";
+import foto5 from "../assets/crater.avif";
+import foto6 from "../assets/canerias.avif";
+import foto7 from "../assets/cajon.avif";
+import foto8 from "../assets/insectos.avif";
 
 const otros = [
     {

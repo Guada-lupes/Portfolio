@@ -7,6 +7,7 @@ import React, { useEffect } from "react";
 export const ResponsiveProyectsComponent = () => {
   const data = proyectosData();
   const isVideo = (src) => {
+    if (!src) return false;
     const videoExtensions = ["mp4", "webm", "ogg", "avi", "mov"];
     const extension = src.split(".").pop().toLowerCase();
     return videoExtensions.includes(extension);
@@ -14,12 +15,15 @@ export const ResponsiveProyectsComponent = () => {
   return (
     <section className="responsive-carrusel-container">
       <div className="responsive-carrusel-pista">
-        {data.map((objeto) => (
-          <div className="responsive-carrusel-item-container" key={objeto.id}>
+        {data.map((objeto, i) => (
+          <div className="responsive-carrusel-item-container" key={i}>
             <div className="responsive-carrusel-item">
               <div className="responsive-carrusel-img-container">
                 {isVideo(objeto.imagen) ? (
-                  <video controls muted src={objeto.imagen} />
+                  <video controls muted>
+                    <source src={objeto.imagen} type="video/mp4" />
+                    {<source src={objeto.imagen_dos} type="video/webm" />}
+                  </video>
                 ) : (
                   <img src={objeto.imagen} alt={objeto.alt} />
                 )}

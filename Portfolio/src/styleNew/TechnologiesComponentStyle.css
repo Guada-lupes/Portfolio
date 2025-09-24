@@ -53,6 +53,6 @@ text-align: center;
 }
 @media(max-width: 480px){
   .technologies-container {
-      grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
   }
 }
