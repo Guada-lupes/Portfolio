@@ -6,8 +6,8 @@ import foto3 from "../assets/BookSpace.png";
 
 const proyectos = [
   {
-    imagen: planeta1,
-    imagen_dos: planeta2,
+    imagen: planeta2,
+    imagen_dos: planeta1,
     id: 1,
     alt: "imagen del proyecto",
     titulo: "El Planeta de las Profesiones",
@@ -23,8 +23,8 @@ const proyectos = [
     em: "https://github.com/Guada-lupes/OccupationsGame",
   },
   {
-    imagen: catalogo1,
-    imagen_dos: catalogo2,
+    imagen: catalogo2,
+    imagen_dos: catalogo1,
     id: 1,
     alt: "imagen del proyecto",
     titulo: "Catálogo Digital",

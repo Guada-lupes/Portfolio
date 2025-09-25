@@ -95,8 +95,8 @@ export const CarruselComponent = () => {
                 <div className="carrusel-img-container">
                   {isVideo(objeto.imagen) ? (
                     <video controls muted>
-                      <source src={objeto.imagen} type="video/mp4" />
-                      {<source src={objeto.imagen_dos} type="video/webm" />}
+                      <source src={objeto.imagen} type="video/webm" />
+                      {<source src={objeto.imagen_dos} type="video/mp4" />}
                     </video>
                   ) : (
                     <img src={objeto.imagen} alt={objeto.alt} />
