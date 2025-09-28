@@ -1,5 +1,6 @@
 import { GitHubLogoPath } from "./GitHubLogoPath";
 import { proyectosData } from "../service/proyectos";
+import { VideoComponent } from "./VideoComponent";
 import "../styleNew/ResponsiveProyectsComponentStyle.css";
 
 import React, { useEffect } from "react";
@@ -20,12 +21,9 @@ export const ResponsiveProyectsComponent = () => {
             <div className="responsive-carrusel-item">
               <div className="responsive-carrusel-img-container">
                 {isVideo(objeto.imagen) ? (
-                  <video controls muted>
-                    <source src={objeto.imagen} type="video/mp4" />
-                    {<source src={objeto.imagen_dos} type="video/webm" />}
-                  </video>
+                  <VideoComponent videoId={objeto.video_id} />
                 ) : (
-                  <img src={objeto.imagen} alt={objeto.alt} />
+                  <img loading="lazy" src={objeto.imagen} alt={objeto.alt} />
                 )}
               </div>
               <div className="responsive-carrusel-info-container">

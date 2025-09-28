@@ -1,5 +1,7 @@
 import TitlesComponent from "./TitlesComponenet";
-import foto1 from "../assets/FotoPortfolio.png";
+import foto1 from "../assets/FotoPortfolio.avif";
+import foto300 from "../assets/FotoPortfolio_300.avif"
+import foto600 from "../assets/FotoPortfolio_600.avif"
 import "../styleNew/AboutMeComponentStyle.css";
 import BackButton from "./BackButton";
 
@@ -8,7 +10,16 @@ export const AboutMeComponent = () => {
     <section className="about-section">
       <div className="about-container">
         <div className="about-img-container">
-          <img loading="lazy" src={foto1} alt="imagen de perfil" />
+          <img
+          className="about_img"
+            loading="lazy"
+            src={foto600}
+            alt="imagen de perfil"
+            srcSet={`${foto300} 300w, ${foto600} 600w, ${foto1} 1024w`}
+            sizes="(max-width: 800px) 25vw, (min-width: 1000px) 10rem, 15rem"
+            width="200"
+            height="200"
+          />
         </div>
         <article className="about-article">
           <TitlesComponent
@@ -42,9 +53,8 @@ export const AboutMeComponent = () => {
             .
           </p>
         </article>
-        
       </div>
-      <BackButton/>
+      <BackButton />
     </section>
   );
 };

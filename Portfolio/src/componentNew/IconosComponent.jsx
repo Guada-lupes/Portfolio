@@ -20,15 +20,6 @@ import { gsap } from "gsap";
 
 export const IconosComponent = () => {
 
-
-// const img = document.querySelector('.item-img img');
-// console.log('currentSrc:', img?.currentSrc);
-// console.log('computed CSS width:', getComputedStyle(img).width);
-// console.log('devicePixelRatio:', window.devicePixelRatio);
-// console.log('needed px:', parseFloat(getComputedStyle(img).width) * window.devicePixelRatio);
-// console.log('naturalWidth:', img.naturalWidth);
-
-
   useEffect(() => {
     gsap.to(".imagen", {
       scale: 1,
