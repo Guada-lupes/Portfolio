@@ -5,7 +5,8 @@
 }
 .responsive-carrusel-item-container {
   animation: aparecer 0.5s ease-in;
-  font-family: "proxima nova regular";
+  font-family: "proxima nova";
+    font-weight: 700;
 }
 .carrusel_ul {
   padding-top: 1rem;
@@ -56,7 +57,8 @@
     margin: 0.35%;
   }
   .responsive-carrusel-info-container > p {
-    font-family: "proxima nova regular";
+    font-family: "proxima nova";
+      font-weight: 700;
     margin-top: 20px;
   }
   .responsive-carrusel-img-container > img {
@@ -89,7 +91,8 @@
     margin: 0.35%;
   }
   .responsive-carrusel-info-container > p {
-    font-family: "proxima nova regular";
+    font-family: "proxima nova";
+      font-weight: 700;
     margin-top: 20px;
   }
   .responsive-carrusel-img-container > img {

@@ -26,7 +26,8 @@
 .about-article {
   padding: 20px;
   width: fit-content;
-  font-family: "proxima nova regular";
+  font-family: "proxima nova";
+  font-weight: 700;
   margin-top: 10px;
   line-height: 1.7em;
   color: var(--text1);

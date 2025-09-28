@@ -8,7 +8,8 @@
   justify-self: center;
 }
 .contac-text-container {
-  font-family: "proxima nova regular";
+  font-family: "proxima nova";
+    font-weight: 700;
   text-align: center;
   color: var(--text1);
 }

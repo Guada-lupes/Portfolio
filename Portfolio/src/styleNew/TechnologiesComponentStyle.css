@@ -2,7 +2,8 @@
   width: 72%;
   justify-self: center;
   margin: auto;
-  font-family: "proxima nova regular";
+  font-family: "proxima nova";
+    font-weight: 700;
   color: var(--text1);
 }
 .technologies-title{

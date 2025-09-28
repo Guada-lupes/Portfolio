@@ -9,7 +9,8 @@
 .desarrollos_title {
     margin: 60px 0 30px;
   color: var(--text1);
-  font-family: "proxima nova regular";
+  font-family: "proxima nova";
+    font-weight: 700;
   text-align: center;
 }
 .carrusel-item-container {
@@ -52,7 +53,8 @@
   transition: all 2s ease;
 }
 .carrusel-info-container{
-  font-family: "proxima nova regular";
+  font-family: "proxima nova";
+    font-weight: 700;
 p {
   margin-top: 20px;
 }

@@ -3,7 +3,8 @@
   justify-self: center;
   margin: auto;
   color: var(--text1);
-  font-family: "proxima nova regular";
+  font-family: "proxima nova";
+    font-weight: 700;
 }
 .work_title {
   justify-self: center;
@@ -61,7 +62,8 @@
   padding: 10px;
 }
 .work-card-info-container > p {
-  font-family: "proxima nova regular";
+  font-family: "proxima nova";
+    font-weight: 700;
   font-size: 1.2rem;
   text-align: center;
 }

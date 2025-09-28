@@ -7,16 +7,16 @@ import { IconosComponent } from "./componentNew/IconosComponent";
 import { ScrollToTopComponents } from "./componentNew/ScrollToTopComponents";
 import { ThemeProvider } from "./contex/ThemeProvider";
 
-const AboutMeComponent = lazy(() => import("./componentNew/AboutMeComponent"));
+const AboutMeComponent = lazy(() => import("./componentNew/AboutMeComponent").then(module => ({ default: module.AboutMeComponent })));
 const ProyectsComponent = lazy(() =>
-  import("./componentNew/ProyectsComponent")
+  import("./componentNew/ProyectsComponent").then(module => ({ default: module.ProyectsComponent }))
 );
-const StudiesComponent = lazy(() => import("./componentNew/StudiesComponent"));
-const WorkComponent = lazy(() => import("./componentNew/WorkComponent"));
-const OthersComponent = lazy(() => import("./componentNew/OthersComponent"));
-const ContactComponent = lazy(() => import("./componentNew/ContactComponent"));
+const StudiesComponent = lazy(() => import("./componentNew/StudiesComponent").then(module => ({ default: module.StudiesComponent })));
+const WorkComponent = lazy(() => import("./componentNew/WorkComponent").then(module => ({ default: module.WorkComponent })));
+const OthersComponent = lazy(() => import("./componentNew/OthersComponent").then(module => ({ default: module.OthersComponent })));
+const ContactComponent = lazy(() => import("./componentNew/ContactComponent").then(module => ({ default: module.ContactComponent })));
 const TechnologiesComponent = lazy(() =>
-  import("./componentNew/TechnologiesComponent")
+  import("./componentNew/TechnologiesComponent").then(module => ({ default: module.TechnologiesComponent }))
 );
 
 function App() {

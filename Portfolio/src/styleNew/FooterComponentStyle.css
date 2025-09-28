@@ -10,7 +10,8 @@
 }
 .mi-creacion {
   padding: 20px 0px;
-  font-family: "proxima nova regular";
+  font-family: "proxima nova";
+    font-weight: 700;
   text-align: center;
   color: #858e99;
   font-size: 1.3em;
@@ -27,7 +28,8 @@
   color: white;
   flex-direction: column;
   justify-content: center;
-  font-family: "proxima nova regular";
+  font-family: "proxima nova";
+    font-weight: 700;
 }
 .privacy-content > p {
   font-size: 1.2em;
