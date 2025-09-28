@@ -25,6 +25,7 @@ export const ContactComponent = () => {
           </p>
         </div>
         <iframe
+        loading="lazy"
           className="contact-form"
           src="https://docs.google.com/forms/d/e/1FAIpQLSd8xFYNLgOBwnAvG_aWfUtpHf7MsS2ekGwwimlOp7hMYjBhVw/viewform?embedded=true"
           width="640"

@@ -97,7 +97,7 @@ export const CarruselComponent = () => {
                   {isVideo(objeto.imagen) ? (
                     <VideoComponent videoId={objeto.video_id} />
                   ) : (
-                    <img src={objeto.imagen} alt={objeto.alt} />
+                    <img loading="lazy" src={objeto.imagen} alt={objeto.alt} />
                   )}
                 </div>
                 <div className="carrusel-info-container">

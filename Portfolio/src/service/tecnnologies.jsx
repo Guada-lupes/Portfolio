@@ -13,33 +13,33 @@ const iconos = {
   conocimientos: [
         {
       name: "SPA (Single Page Aplication)",
-      icon: <img src={page} alt="icono de javascript" />,
+      icon: <img loading="lazy" src={page} alt="icono de javascript" />,
     },
     {
       name: "Api RestFul",
-      icon: <img src={api} alt="icono de javascript" />,
+      icon: <img loading="lazy" src={api} alt="icono de javascript" />,
     },
         {
       name: "Protocolo HTTP",
-      icon: <img src={http} alt="icono de javascript" />,
+      icon: <img loading="lazy" src={http} alt="icono de javascript" />,
     },
         {
       name: "CSS modules",
-      icon: <img src={css} alt="icono de javascript" />,
+      icon: <img loading="lazy" src={css} alt="icono de javascript" />,
     }
   ],
   tecnologias: [
     {
       name: "HTML5",
-      icon: <img src={icon2} alt="icono de html5" />,
+      icon: <img loading="lazy" src={icon2} alt="icono de html5" />,
     },
     {
       name: "CSS3",
-      icon: <img src={icon3} alt="icono de css5" />,
+      icon: <img loading="lazy" src={icon3} alt="icono de css5" />,
     },
             {
       name: "Javascript",
-      icon: <img src={icon1} alt="icono de javascript" />,
+      icon: <img loading="lazy" src={icon1} alt="icono de javascript" />,
     },
     {
       name: "Sass",
@@ -214,16 +214,16 @@ const iconos = {
     },
         {
       name: "NPM",
-      icon: <img src={npm} alt="icono de npm" />,
+      icon: <img loading="lazy" src={npm} alt="icono de npm" />,
     },
         {
       name: "Vercel",
-      icon: <img src={vercel} alt="icono de vercel" />
+      icon: <img loading="lazy" src={vercel} alt="icono de vercel" />
 ,
     },
         {
       name: "Figma",
-      icon: <img src={figma} alt="icono de figma" />,
+      icon: <img loading="lazy" src={figma} alt="icono de figma" />,
     }
   ],
 };

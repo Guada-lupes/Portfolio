@@ -1,17 +1,23 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
+import { Suspense, lazy } from "react";
 import { HeaderComponent } from "./componentNew/HeaderComponent";
 import { FooterComponent } from "./componentNew/FooterComponent";
-import { ProyectsComponent } from "./componentNew/ProyectsComponent";
-import { StudiesComponent } from "./componentNew/StudiesComponent";
-import { WorkComponent } from "./componentNew/WorkComponent";
-import { OthersComponent } from "./componentNew/OthersComponent";
-import { AboutMeComponent } from "./componentNew/AboutMeComponent";
-import { ContactComponent } from "./componentNew/ContactComponent";
 import { IconosComponent } from "./componentNew/IconosComponent";
 import { ScrollToTopComponents } from "./componentNew/ScrollToTopComponents";
-import { TechnologiesComponent } from "./componentNew/TechnologiesComponent";
 import { ThemeProvider } from "./contex/ThemeProvider";
+
+const AboutMeComponent = lazy(() => import("./componentNew/AboutMeComponent"));
+const ProyectsComponent = lazy(() =>
+  import("./componentNew/ProyectsComponent")
+);
+const StudiesComponent = lazy(() => import("./componentNew/StudiesComponent"));
+const WorkComponent = lazy(() => import("./componentNew/WorkComponent"));
+const OthersComponent = lazy(() => import("./componentNew/OthersComponent"));
+const ContactComponent = lazy(() => import("./componentNew/ContactComponent"));
+const TechnologiesComponent = lazy(() =>
+  import("./componentNew/TechnologiesComponent")
+);
 
 function App() {
   return (
@@ -19,16 +25,18 @@ function App() {
       <ThemeProvider>
         <HeaderComponent />
         <ScrollToTopComponents />
-        <Routes>
-          <Route path="/" element={<IconosComponent />} />
-          <Route path="/proyects" element={<ProyectsComponent />} />
-          <Route path="/studies" element={<StudiesComponent />} />
-          <Route path="/work" element={<WorkComponent />} />
-          <Route path="/others" element={<OthersComponent />} />
-          <Route path="/aboutme" element={<AboutMeComponent />} />
-          <Route path="/contact" element={<ContactComponent />} />
-          <Route path="/tech" element={<TechnologiesComponent />} />
-        </Routes>
+        <Suspense fallback={<div>Cargando</div>}>
+          <Routes>
+            <Route path="/" element={<IconosComponent />} />
+            <Route path="/proyects" element={<ProyectsComponent />} />
+            <Route path="/studies" element={<StudiesComponent />} />
+            <Route path="/work" element={<WorkComponent />} />
+            <Route path="/others" element={<OthersComponent />} />
+            <Route path="/aboutme" element={<AboutMeComponent />} />
+            <Route path="/contact" element={<ContactComponent />} />
+            <Route path="/tech" element={<TechnologiesComponent />} />
+          </Routes>
+        </Suspense>
         <FooterComponent />
       </ThemeProvider>
     </>
