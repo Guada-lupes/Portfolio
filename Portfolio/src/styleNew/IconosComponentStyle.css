@@ -17,7 +17,8 @@
 .item-p > p {
   font-size: clamp();
   justify-self: center;
-  font-family: "proxima nova regular";
+  font-family: "proxima nova";
+  font-weight: 700;
   text-align: center;
   color: var(--text1);
 }

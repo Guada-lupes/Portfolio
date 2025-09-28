@@ -3,7 +3,7 @@ import { useTheme } from "../contex/ThemeProvider";
 
 export const ToggleThemeComponent = () => {
   const { toggleTheme, theme } = useTheme();
-  const styles = {width: "2.5vw"}
+  const styles = {width: "clamp(1rem, 2.6vw, 2rem)", position: "absolute", top: "1rem"}
   const color = theme === "dark" ? "grey" : "grey";
   return (
     <div onClick={toggleTheme} style={{justifySelf: "right"}}>

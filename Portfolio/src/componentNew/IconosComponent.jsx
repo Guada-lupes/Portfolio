@@ -4,11 +4,31 @@ import foto2 from "../assets/ordenador.avif";
 import foto3 from "../assets/caja.avif";
 import foto4 from "../assets/libro.avif";
 import foto5 from "../assets/herramientas.avif";
+import ordenadorResponsive from "../assets/ordenador_300.avif";
+import obreraResponsive from "../assets/obrera_300.avif";
+import libroResponsive from "../assets/libro_300.avif";
+import cajaResponsive from "../assets/caja_300.avif";
+import herramientasResponsive from "../assets/herramientas_300.avif";
+import ordenador600 from "../assets/ordenador_600.avif"
+import obrera600 from "../assets/obrera_600.avif"
+import libro600 from "../assets/libro_600.avif"
+import caja600 from "../assets/caja_600.avif"
+import herramientas600 from "../assets/herramientas_600.avif"
 import { Link } from "react-router-dom";
 import "../styleNew/IconosComponentStyle.css";
 import { gsap } from "gsap";
 
 export const IconosComponent = () => {
+
+
+// const img = document.querySelector('.item-img img');
+// console.log('currentSrc:', img?.currentSrc);
+// console.log('computed CSS width:', getComputedStyle(img).width);
+// console.log('devicePixelRatio:', window.devicePixelRatio);
+// console.log('needed px:', parseFloat(getComputedStyle(img).width) * window.devicePixelRatio);
+// console.log('naturalWidth:', img.naturalWidth);
+
+
   useEffect(() => {
     gsap.to(".imagen", {
       scale: 1,
@@ -26,8 +46,12 @@ export const IconosComponent = () => {
           <Link className="item-img" to="/proyects">
             <img
               className="imagen"
-              src={foto2}
+              src={ordenadorResponsive}
               alt="icono de un ordenador retro"
+              srcSet={`${ordenadorResponsive} 300w, ${ordenador600} 600w, ${foto2} 1024w`}
+              sizes="(max-width: 800px) 140px, (min-width: 1000px) 160px, 14vw"
+              width="200"
+              height="200"
             />
           </Link>
           <Link className="item-p" to="/proyects">
@@ -36,7 +60,15 @@ export const IconosComponent = () => {
         </div>
         <div className="icono-item">
           <Link className="item-img" to="/studies">
-            <img className="imagen" src={foto4} alt="icono de un libro" />
+            <img
+              className="imagen"
+              src={libroResponsive}
+              alt="icono de un libro"
+              srcSet={`${libroResponsive} 300w, ${libro600} 600w,  ${foto4} 1024w`}
+              sizes="(max-width: 800px) 140px, (min-width: 1000px) 160px, 14vw"
+              width="200"
+              height="200"
+            />
           </Link>
           <Link to="/studies" className="item-p">
             <p>Formación</p>
@@ -46,8 +78,12 @@ export const IconosComponent = () => {
           <Link className="item-img" to="/tech">
             <img
               className="imagen"
-              src={foto5}
+              src={herramientasResponsive}
               alt="icono de una caja de herramientas"
+              srcSet={`${herramientasResponsive} 300w, ${herramientas600} 600w,  ${foto5} 1024w`}
+              sizes="(max-width: 800px) 140px, (min-width: 1000px) 160px, 14vw"
+              width="200"
+              height="200"
             />
           </Link>
           <Link to="/work" className="item-p">
@@ -58,8 +94,12 @@ export const IconosComponent = () => {
           <Link className="item-img" to="/work">
             <img
               className="imagen"
-              src={foto1}
+              src={obreraResponsive}
               alt="icono de una mujer obrera"
+              srcSet={`${obreraResponsive} 300w, ${obrera600} 600w,  ${foto1} 1024w`}
+              sizes="(max-width: 800px) 140px, (min-width: 1000px) 160px, 14vw"
+              width="200"
+              height="200"
             />
           </Link>
           <Link to="/work" className="item-p">
@@ -70,8 +110,12 @@ export const IconosComponent = () => {
           <Link className="item-img" to="/others">
             <img
               className="imagen"
-              src={foto3}
+              src={cajaResponsive}
               alt="icono de una caja de sorpresa"
+              srcSet={`${cajaResponsive} 300w, ${caja600} 600w,  ${foto3} 1024w`}
+              sizes="(max-width: 800px) 140px, (min-width: 1000px) 160px, 14vw"
+              width="200"
+              height="200"
             />
           </Link>
           <Link to="/others" className="item-p">

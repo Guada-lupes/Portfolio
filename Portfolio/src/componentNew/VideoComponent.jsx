@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../styleNew/VideoComponentStyle.css"
+import "../styleNew/videoComponentStyle.css"
 
 export function VideoComponent({ videoId }) {
   const [isPlaying, setIsPlaying] = useState(false);
