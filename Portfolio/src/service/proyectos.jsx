@@ -1,11 +1,12 @@
 import planeta2 from "../assets/planeta_profesiones.webm";
-import planeta1 from "../assets/planeta.mp4"
-import catalogo1 from "../assets/catalogo.mp4"
+import planeta1 from "../assets/planeta.mp4";
+import catalogo1 from "../assets/catalogo.mp4";
 import catalogo2 from "../assets/catalogo.webm";
 import foto3 from "../assets/BookSpace.png";
 
 const proyectos = [
   {
+    video_id: "5WGMRXzbcUA",
     imagen: planeta2,
     imagen_dos: planeta1,
     id: 1,
@@ -23,6 +24,7 @@ const proyectos = [
     em: "https://github.com/Guada-lupes/OccupationsGame",
   },
   {
+    video_id: "L5eIWGDVuHw",
     imagen: catalogo2,
     imagen_dos: catalogo1,
     id: 1,

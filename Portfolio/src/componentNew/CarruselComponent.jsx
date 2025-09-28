@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useState, useRef } from "react";
 import { GitHubLogoPath } from "./GitHubLogoPath";
 import { proyectosData } from "../service/proyectos";
+import { VideoComponent } from "./VideoComponent";
 import "../styleNew/CarruselComponentStyle.css";
 
 export const CarruselComponent = () => {
@@ -94,10 +95,7 @@ export const CarruselComponent = () => {
               <div className="carrusel-item">
                 <div className="carrusel-img-container">
                   {isVideo(objeto.imagen) ? (
-                    <video controls muted>
-                      <source src={objeto.imagen} type="video/webm" />
-                      {<source src={objeto.imagen_dos} type="video/mp4" />}
-                    </video>
+                    <VideoComponent videoId={objeto.video_id} />
                   ) : (
                     <img src={objeto.imagen} alt={objeto.alt} />
                   )}
