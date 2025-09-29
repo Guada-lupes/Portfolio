@@ -28,21 +28,10 @@ export const AboutMeComponent = () => {
           />
           <p className="article-p">
             En 2024 me he embarcado en un nuevo proyecto profesional,
-            convertirme en <span>Desarroladora Web Front-End</span>. Siempre me
-            ha gustado la tecnología y como pedagoga integro en mi práctica
-            numerosas herramientas digitales que facilitan y dinamizan el
-            trabajo. Mi sorpresa fué descubrir que ser desarroladora web
-            encajaba perfectamente con mi persona: la necesidad de resolver de
-            problemas, de ser perseverante, de tolerar la frustración y la
-            incertidumbre, incluso, el tener que gestionar un aprendizaje
-            contínuo o convertirme un poquito en investigadora.
+            convertirme en <span>Desarroladora Web Front-End</span>. 
           </p>
           <p className="article-p">
-            Sumado a todo ello, la posibilidad de ser creativa y la libertad de
-            diseñar y crear proyectos personales, aumentaron mi fascinación por
-            el mundo del desarrollo. Aqui es donde me quiero quedar y crecer
-            profesionalmente, por supuesto, trayendo conmigo, mis conocimientos
-            y habilidades desarrolladas como pedagoga.
+
           </p>
           <p className="article-p">
             Actualmente utilizo las siguientes tecnologías: <span>HTML</span>,{" "}
