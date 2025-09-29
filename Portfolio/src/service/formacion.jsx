@@ -15,14 +15,15 @@ const formacion = [
     descripcion: "2022",
     em:"UNED",
 },
-{
-    imagen: "https://estatics.web.ub.edu/image/company_logo?img_id=2946262&t=1744002142300",
-    id:4,
-    alt: "logo de la academia",
-    titulo: "Postgrado en Educación Emocional",
-    descripcion: "2024",
-    em:"Universitat de Barcelona",
-}]
+// {
+//     imagen: "https://estatics.web.ub.edu/image/company_logo?img_id=2946262&t=1744002142300",
+//     id:4,
+//     alt: "logo de la academia",
+//     titulo: "Postgrado en Educación Emocional",
+//     descripcion: "2024",
+//     em:"Universitat de Barcelona",
+// }
+]
 
 const formacionEspecifica = [
   {
@@ -30,8 +31,8 @@ const formacionEspecifica = [
     id:1,
     alt: "logo de la academia",
     titulo: "Bootcamp Her-Tech Front End Development",
-    descripcion: "2025",
-    aprendizajes: "Formación práctica intensiva en Fundamentos de programación, HTML y CSS avanzado, Javascript y manipulación del DOM, React, Diseño UI/UX (350hs).",
+    descripcion: "Participé en un bootcamp de desarrollo web con un enfoque 100% práctico, donde adquirí conocimientos y experiencia en:",
+    aprendizajes: ["Fundamentos de programación y JavaScript avanzado: manipulación del DOM, peticiones CRUD a API REST y gestión de estado con useReducer y useContext.", "Frontend: HTML5, CSS3 avanzado, SASS, diseño responsivo, validación de formularios, componentes reutilizables y buenas prácticas de código.", "Frameworks y librerías: React, Vite.", "Backend básico: introducción a Node.js.", "Diseño UI/UX: prototipado y diseño en Figma, centrado en la experiencia del usuario."],
     em:"Code Space Academy",
 },
 ];
