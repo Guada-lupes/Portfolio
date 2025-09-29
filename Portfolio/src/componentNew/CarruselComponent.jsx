@@ -114,6 +114,7 @@ export const CarruselComponent = () => {
                     ""
                   )}
                 </div>
+                <p className="carrusel_stack">{objeto.stack}</p>
                 {objeto.em ? <GitHubLogoPath path={objeto.em} /> : ""}
               </div>
             </div>

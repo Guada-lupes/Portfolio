@@ -11,7 +11,7 @@
    visibility:hidden;
 }
 .name_title:hover {
-  color: #83c5be;
+  color: var(--text4);
 }
 .header-info > p {
   font-size: clamp(1rem, 1.5vw, 2rem);
@@ -19,7 +19,7 @@
   font-weight: 600;
   text-align: center;
   margin: 28px 0px;
-  color: #a8a8a8;
+  color: var(--text3);
 }
 .header-nav {
   padding: 28px;
@@ -40,11 +40,11 @@
   letter-spacing: 2px;
 }
 .header-nav-ul > li:hover {
-  color: #83c5be;
+  color: var(--text4);
   cursor: pointer;
 }
 .titles-checked {
-  color: #83c5be;
+  color: var(--text4);
 }
 @media (max-width: 480px) {
   .header {

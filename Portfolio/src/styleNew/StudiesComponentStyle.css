@@ -32,7 +32,6 @@
     transform: translatey(-5%);
   }
 }
-
 .car-especific-content {
   display: flex;
   flex-direction: column;
@@ -47,6 +46,24 @@
 }
 .card-img-especific{
   max-width: 35%;
+}
+.studies_ul {
+  padding-top: 1rem;
+  li{
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+}}
+.studies_ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: var(--text1); /* Color azul, puedes cambiarlo */
+  border-radius: 2px; /* Para esquinas ligeramente redondeadas */
 }
 /* formacion academica */
 

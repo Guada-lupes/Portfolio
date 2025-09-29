@@ -11,7 +11,7 @@ export const OthersComponent = () => {
     <>
     <section className="others-cards-section">
       <TitlesComponent texto={"Arte y mixmedia"} class_name={"art_title"}/>
-      <p>Me encanta crear. Disfruto creando todo tipo de artefactos: cuadros, albumnes de fotos, itinerarios de viajes, juegos educativos... etc. Disfruto muchísimo el proceso de imaginar el artefacto, elegir la paleta de colores, los materiales, planificar la composición, atascarme porque no me cuadra el resultado, dejarme llevar por los sentidos y conseguir el resultado deseado</p>
+      <p className="art_p">Me encanta crear. Disfruto creando todo tipo de artefactos: cuadros, albumnes de fotos, itinerarios de viajes, juegos educativos... etc. Disfruto muchísimo el proceso de imaginar el artefacto, elegir la paleta de colores, los materiales, planificar la composición, atascarme porque no me cuadra el resultado, dejarme llevar por los sentidos y conseguir el resultado deseado</p>
       <p>Aquí dejo una muestra de mis cuadros. Parto de una idea o de un material e inicio el proceso de transformación. Utilizo acrílicos, telas, plantas, objetos en deshuso, moldes, pastas, tintes ...</p>
       <div className='others-cards-container'>
       {data.map((objeto) => (

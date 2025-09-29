@@ -24,9 +24,15 @@ export const StudiesComponent = () => {
               <div className="car-especific-content">
                 <p className="car-especific-title">{objeto.titulo}</p>
                 <p className="car-especific-aprendizajes">
-                  {objeto.aprendizajes}
+                  {objeto.descripcion}
                 </p>
-                <p className="car-especific-fecha">{objeto.descripcion}</p>
+                    <ul className="studies_ul">
+                      {objeto.aprendizajes.map((e, i) => (
+                        <li key={i}>
+                          <p>{e}</p>
+                        </li>
+                      ))}
+                    </ul>
               </div>
             </div>
           ))}

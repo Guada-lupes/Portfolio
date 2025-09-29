@@ -7,8 +7,9 @@
 [data-theme="light"] {
   --bgColor: #f9f9ca;
   --text1: #121212;
-  --text2: #666;
-  --text3: #a8a8a8;
+  --text2: #002866;
+  --text3: #0f3165;
+  --text4: #F8660E;
   transition: all 1s ease-in-out;
 }
 [data-theme="dark"] {
@@ -16,6 +17,7 @@
   --text1: white;
   --text2: #bfbfbf;
   --text3: #a8a8a8;
+  --text4: #83c5be;
 }
 
 html,
