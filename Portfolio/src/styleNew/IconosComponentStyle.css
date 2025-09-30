@@ -15,7 +15,6 @@
   align-items: center;
 }
 .item-p > p {
-  font-size: clamp();
   justify-self: center;
   font-family: "proxima nova";
   font-weight: 700;
