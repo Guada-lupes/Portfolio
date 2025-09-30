@@ -22,6 +22,7 @@ export const CarruselComponent = () => {
     const distance = containerWidth * 0.5;
     const buttonSize = containerWidth * 0.05;
     const margin = containerWidth * 0.25;
+    console.log(containerWidth, distance, margin);
     setMeasure({
       before: margin - buttonSize,
       after: containerWidth - (buttonSize + margin + distance),
@@ -53,8 +54,9 @@ export const CarruselComponent = () => {
   };
 
   return (
-    <section className="carrusel-container">
-      <div ref={sizeContainer} className="buttons_container">
+    <div className="all_section_container" ref={sizeContainer}>
+         <section  className="carrusel-container">
+      <div className="buttons_container">
         {currentPosition > 1 && (
           <div
             style={{ top: measure.before, width: measure.width }}
@@ -95,7 +97,7 @@ export const CarruselComponent = () => {
               <div className="carrusel-item">
                 <div className="carrusel-img-container">
                   {isVideo(objeto.imagen) ? (
-                    <VideoComponent videoId={objeto.video_id}/>
+                    <VideoComponent videoId={objeto.video_id} />
                   ) : (
                     <img loading="lazy" src={objeto.imagen} alt={objeto.alt} />
                   )}
@@ -143,6 +145,8 @@ export const CarruselComponent = () => {
           </div>
         )}
       </div>
-    </section>
+    </section> 
+    </div>
+
   );
 };
