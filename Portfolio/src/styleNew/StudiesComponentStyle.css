@@ -46,6 +46,7 @@
 }
 .card-img-especific{
   max-width: 35%;
+  align-self: baseline;
 }
 .studies_ul {
   padding-top: 1rem;

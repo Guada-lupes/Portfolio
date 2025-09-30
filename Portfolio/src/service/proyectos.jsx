@@ -21,7 +21,7 @@ const proyectos = [
       "Interacciones enriquecidas: integración de la librería 'hello pangea/dnd' para el drag and drop en retos de clasificación y ordenamiento.",
       "Datos reales: contenidos extraídos de informes del SEPE, con enlaces a fichas profesionales descargables.",
     ],
-    stack: "js",
+    stack: "Javascript | HTML | CSS Modules | React | Vite | React_Router_Dom | hello pangea/dnd",
     em: "https://github.com/Guada-lupes/OccupationsGame",
   },
   {
@@ -39,7 +39,7 @@ const proyectos = [
       "Versión PDF imprimible: generación automática de revista digital usando React-PDF.",
       "Integración con la API de ZODDAK mediante peticiones asíncronas y token",
     ],
-        stack: "js",
+        stack: "Javascript | HTML | CSS | React | Vite | React_Router_Dom | React-PDF | React.memo | Bootstrap",
     em: "",
   },
   {
@@ -51,7 +51,7 @@ const proyectos = [
     descripcion:
       "Plataforma de gestión de libros y usuarios desarrollada con Vite y React. Permite a los usuarios explorar libros, gestionar favoritos, gestionar tareas administrativas (para administradores) y realizar operaciones CRUD tanto para libros como para perfiles de usuario. La aplicación utiliza React Context para la gestión global del estado y los servicios, gracias a la interacción con una matriz de objetos de datos simulados.",
     funcionalidades: [],
-        stack: "js",
+        stack: "Javascript | HTML | CSS | React | Vite | React_Router_Dom",
     em: "https://github.com/Guada-lupes/Proyecto-Final--Grupo-1.git",
   },
 ];

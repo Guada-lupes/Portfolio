@@ -4,7 +4,7 @@
   margin: auto;
   color: var(--text1);
   font-family: "proxima nova";
-    font-weight: 700;
+  font-weight: 700;
 }
 .work_title {
   justify-self: center;
@@ -20,7 +20,7 @@
 }
 .work-cards-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   width: 100%;
   gap: 4%;
   justify-self: center;
@@ -52,20 +52,37 @@
 .work-card-title-container > p {
   text-align: center;
   font-size: 1.2em;
-  height: 80px;
 }
 .work-card-title-container {
   padding: 0 10px;
-  min-height: 80px;
 }
 .work-card-info-container {
   padding: 10px;
 }
-.work-card-info-container > p {
+.work_p {
   font-family: "proxima nova";
-    font-weight: 700;
-  font-size: 1.2rem;
+  font-weight: 700;
   text-align: center;
+  margin: 1.5rem 0;
+}
+.work_ul {
+ 
+  li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+  }
+}
+.work_ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: var(--text1); /* Color azul, puedes cambiarlo */
+  border-radius: 2px; /* Para esquinas ligeramente redondeadas */
 }
 @media (max-width: 480px) {
   .work-cards-section {

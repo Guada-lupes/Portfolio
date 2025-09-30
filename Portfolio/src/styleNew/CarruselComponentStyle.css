@@ -22,7 +22,9 @@
   transform: translateX(0);
   min-height: 700px;
 }
-
+.carrusel_stack{
+  padding: 2rem 0;
+}
 @keyframes aparecer {
   from {
     opacity: 0;
