@@ -21,10 +21,9 @@ export const CarruselComponent = () => {
     const containerWidth = sizeContainer.current.offsetWidth;
     const distance = containerWidth * 0.5;
     const buttonSize = containerWidth * 0.05;
-    const margin = containerWidth * 0.25;
-    console.log(containerWidth, distance, margin);
+    const margin = containerWidth * 0.28;
     setMeasure({
-      before: margin - buttonSize,
+      before: containerWidth - (buttonSize + margin + distance),
       after: containerWidth - (buttonSize + margin + distance),
       width: buttonSize,
     });
