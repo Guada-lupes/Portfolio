@@ -40,7 +40,7 @@ const proyectos = [
       "Integración con la API de ZODDAK mediante peticiones asíncronas y token",
     ],
         stack: "Javascript | HTML | CSS | React | Vite | React_Router_Dom | React-PDF | React.memo | Bootstrap",
-    em: "",
+    em: "https://github.com/Guada-lupes/Catalogo_personalizado/tree/main",
   },
   {
     imagen: foto3,

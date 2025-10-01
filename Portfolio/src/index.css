@@ -9,8 +9,8 @@
   --text1: #121212;
   --text2: #002866;
   --text3: #0f3165;
-  --text4: #f8660e;
-  --colo1: #f8660e;
+  --text4: #94461f;
+  --colo1: #94461f;
   transition: all 1s ease-in-out;
 }
 [data-theme="dark"] {
@@ -19,7 +19,7 @@
   --text2: #bfbfbf;
   --text3: #a8a8a8;
   --text4: #83c5be;
-  --colo1: #f8660e;
+  --colo1: #94461f;
 }
 
 html,
