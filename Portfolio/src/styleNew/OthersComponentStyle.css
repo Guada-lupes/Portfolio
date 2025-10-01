@@ -37,10 +37,10 @@
 }
 .others-card-img-container {
   overflow: hidden;
-  transition: 1 ease;
+  transition: transform 0.3s ease-in-out;
 }
 .others-card-img-container:hover {
-  transform: scale(1.05, 1.05);
+  transform: scale(1.05);
 }
 .others-card-img-container > img {
   width: 250px;

@@ -41,7 +41,11 @@
 }
 .carrusel-button {
   z-index: 100;
-  
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  &&:hover{
+    transform: scale(1.1);
+  }
 }
 .before {
   position: absolute;

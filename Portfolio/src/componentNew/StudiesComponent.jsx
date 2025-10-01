@@ -33,6 +33,7 @@ export const StudiesComponent = () => {
                         </li>
                       ))}
                     </ul>
+                    <p className="car_date">{objeto.fecha}</p>
               </div>
             </div>
           ))}

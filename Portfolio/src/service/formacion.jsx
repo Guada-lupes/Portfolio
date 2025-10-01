@@ -30,9 +30,10 @@ const formacionEspecifica = [
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbjtb2yk4262Y5bu2gPjTHYKjry-hWf1m9Eg&s",
     id:1,
     alt: "logo de la academia",
-    titulo: "Bootcamp Her-Tech Front End Development",
+    titulo: "Bootcamp Her-Tech Front End Development (350hs)",
     descripcion: "Participé en un bootcamp de desarrollo web con un enfoque 100% práctico, donde adquirí conocimientos y experiencia en:",
     aprendizajes: ["Fundamentos de programación y JavaScript avanzado: manipulación del DOM, peticiones CRUD a API REST y gestión de estado con useReducer y useContext.", "Frontend: HTML5, CSS3 avanzado, SASS, diseño responsivo, validación de formularios, componentes reutilizables y buenas prácticas de código.", "Frameworks y librerías: React, Vite.", "Backend básico: introducción a Node.js.", "Diseño UI/UX: prototipado y diseño en Figma, centrado en la experiencia del usuario."],
+    fecha: "2025",
     em:"Code Space Academy",
 },
 ];

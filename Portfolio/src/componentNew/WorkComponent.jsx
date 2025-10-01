@@ -36,6 +36,7 @@ export const WorkComponent = () => {
                 ""
               )}
               {objeto.descripcion_3 ? <p className="work_p">{objeto.descripcion_3}</p> : ""}
+              <p className="work_p">{objeto.fecha}</p>
             </div>
           </div>
         ))}
