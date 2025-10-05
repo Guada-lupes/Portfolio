@@ -21,7 +21,7 @@ const proyectos = [
       "Interacciones enriquecidas: integración de la librería 'hello pangea/dnd' para el drag and drop en retos de clasificación y ordenamiento.",
       "Datos reales: contenidos extraídos de informes del SEPE, con enlaces a fichas profesionales descargables.",
     ],
-    stack: "Javascript | HTML | CSS Modules | React | Vite | React_Router_Dom | hello pangea/dnd",
+    stack: "Javascript | HTML | CSS Modules | React | Vite | React_Router_Dom | hello pangea/dnd | React.lazy | react-helmet",
     em: "https://github.com/Guada-lupes/OccupationsGame",
   },
   {
