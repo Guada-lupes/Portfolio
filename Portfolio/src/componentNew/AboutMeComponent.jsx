@@ -1,7 +1,7 @@
 import TitlesComponent from "./TitlesComponenet";
 import foto1 from "../assets/FotoPortfolio.avif";
-import foto300 from "../assets/FotoPortfolio_300.avif"
-import foto600 from "../assets/FotoPortfolio_600.avif"
+import foto300 from "../assets/FotoPortfolio_300.avif";
+import foto600 from "../assets/FotoPortfolio_600.avif";
 import "../styleNew/AboutMeComponentStyle.css";
 import BackButton from "./BackButton";
 
@@ -11,7 +11,7 @@ export const AboutMeComponent = () => {
       <div className="about-container">
         <div className="about-img-container">
           <img
-          className="about_img"
+            className="about_img"
             loading="lazy"
             src={foto600}
             alt="imagen de perfil"
@@ -27,19 +27,23 @@ export const AboutMeComponent = () => {
             class_name={"article-h2"}
           />
           <p className="article-p">
-            En 2024 me he embarcado en un nuevo proyecto profesional,
-            convertirme en <span>Desarroladora Web Front-End</span>. 
+            Tras una formación intensiva en desarrollo web continué aprendiendo
+            de forma autónoma, diseñando y creando mis propios proyectos. Esto
+            me ha permitido consolidar una base sólida en{" "}
+            <span>JavaScript</span>, <span>ES6</span>, <span>CSS moderno</span>{" "}
+            y <span>React</span>. Actualmente estoy profundizando en testing con <span>Jest</span>,
+              explorando <span>Next.js</span> para la creación
+            de páginas estáticas de alto rendimiento y utilizando{" "}
+            <span>TypeScript</span> para escribir un código más claro y
+            mantenible.
           </p>
           <p className="article-p">
-
-          </p>
-          <p className="article-p">
-            Actualmente utilizo las siguientes tecnologías: <span>HTML</span>,{" "}
-            <span>CSS</span>, <span>JavaScript</span>, <span>React</span>,{" "}
-            <span>Vite</span>, <span>Node.js</span>, <span>Sass</span>. Estoy
-            trabajando en mejorar mi dominio y en crear código más{" "}
-            <span>limpio</span>, <span>eficiente</span> y <span>escalable</span>
-            .
+            Mi trayectoria en el sector educativo me ha brindado habilidades
+            transferibles muy valiosas para el desarrollo web: la capacidad de
+            comunicar con claridad, planificar con eficacia y diseñar
+            experiencias accesibles e intuitivas. Además, me caracterizo por mi
+            creatividad, mi interés en la usabilidad y mi compromiso con el
+            aprendizaje continuo.
           </p>
         </article>
       </div>

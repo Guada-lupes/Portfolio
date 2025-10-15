@@ -7,8 +7,10 @@
 [data-theme="light"] {
   --bgColor: #f9f9ca;
   --text1: #121212;
-  --text2: #666;
-  --text3: #a8a8a8;
+  --text2: #002866;
+  --text3: #0f3165;
+  --text4: #94461f;
+  --colo1: #94461f;
   transition: all 1s ease-in-out;
 }
 [data-theme="dark"] {
@@ -16,6 +18,8 @@
   --text1: white;
   --text2: #bfbfbf;
   --text3: #a8a8a8;
+  --text4: #83c5be;
+  --colo1: #94461f;
 }
 
 html,
@@ -50,10 +54,10 @@ a {
   text-decoration: none;
 }
 
-p{
+p {
   font-size: clamp(1rem, 1.2vw, 1.2rem);
 }
-h2{
-  font-size: clamp(1.5rem, 2vw, 1.8rem)
+h2 {
+  font-size: clamp(1.5rem, 2vw, 1.8rem);
 }
 /* Variables */

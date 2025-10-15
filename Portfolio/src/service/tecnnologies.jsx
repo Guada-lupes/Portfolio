@@ -20,7 +20,7 @@ const iconos = {
       icon: <img loading="lazy" src={api} alt="icono de javascript" />,
     },
         {
-      name: "Protocolo HTTP",
+      name: "CRUD",
       icon: <img loading="lazy" src={http} alt="icono de javascript" />,
     },
         {

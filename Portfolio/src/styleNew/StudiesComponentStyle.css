@@ -32,21 +32,36 @@
     transform: translatey(-5%);
   }
 }
-
 .car-especific-content {
   display: flex;
   flex-direction: column;
   gap: 10px;
   justify-content: space-between;
 }
-.car-especific-title{
-  font-size: 1.5em;
-}
-.car-especific-aprendizajes, .car-especific-fecha{
-  font-size: 1.2em;
+.car_date{
+  text-align: center;
 }
 .card-img-especific{
   max-width: 35%;
+  align-self: baseline;
+}
+.studies_ul {
+  padding-top: 1rem;
+  li{
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+}}
+.studies_ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: var(--text1); /* Color azul, puedes cambiarlo */
+  border-radius: 2px; /* Para esquinas ligeramente redondeadas */
 }
 /* formacion academica */
 
@@ -68,6 +83,9 @@
   .card-especific-item {
     flex-direction: row;
   }
+  .car_date{
+  text-align: left;
+}
 }
 @keyframes aparecer {
   from {
@@ -95,7 +113,6 @@
 }
 .card-title-container > p {
   text-align: center;
-  font-size: 1.2em;
   height: 80px;
   font-family: "proxima nova";
     font-weight: 700;
@@ -103,9 +120,11 @@
 .card-info-container > p {
   font-family: "proxima nova";
     font-weight: 700;
-  font-size: 1.2rem;
 }
 @media (max-width: 480px) {
+  .card-img-especific{
+    align-self: center;
+  }
   .cards-section {
     width: 90%;
   }
@@ -119,11 +138,7 @@
     padding: 10px;
   }
   .card-title-container > p {
-    font-size: 1.4em;
     height: 3em;
-  }
-  .card-info-container > p {
-    font-size: 1.4rem;
   }
   .card-item-container {
     gap: 5px;
@@ -146,12 +161,9 @@
     padding: 10px;
   }
   .card-title-container > p {
-    font-size: 1.4em;
     height: 3em;
   }
-  .card-info-container > p {
-    font-size: 1.4rem;
-  }
+
   .card-item-container {
     gap: 5px;
     box-shadow: 1px 1px 3px 1px gray;

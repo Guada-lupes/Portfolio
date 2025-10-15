@@ -10,7 +10,7 @@
 }
 .about-img-container {
 transform: rotateY(180deg);
-width: clamp(7.5rem, 25dvw, 10rem);
+width: clamp(7.5rem, 25dvw, 17rem);
 }
 .about-img-container > img {
   animation: aparecer 0.3s ease;
@@ -40,7 +40,8 @@ width: clamp(7.5rem, 25dvw, 10rem);
   margin-bottom: 20px;
 }
 .about-article > p > span {
-  font-weight: bold;
+  font-weight: 400;
+  color: var(--colo1);
 }
 @media (max-width: 480px) {
   .about-section {

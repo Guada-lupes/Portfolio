@@ -4,13 +4,14 @@
   margin: auto;
   color: var(--text1);
   font-family: "proxima nova";
-    font-weight: 700;
+  font-weight: 700;
 }
 .work_title {
   justify-self: center;
   margin: 60px 0 30px;
 }
 .work-card-item-container {
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,8 +20,8 @@
   border-radius: 5px;
 }
 .work-cards-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+flex-direction: row;
   width: 100%;
   gap: 4%;
   justify-self: center;
@@ -47,27 +48,43 @@
 .work-card-img-container > img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .work-card-title-container > p {
   text-align: center;
-  font-size: 1.2em;
-  height: 80px;
 }
 .work-card-title-container {
   padding: 0 10px;
-  min-height: 80px;
 }
 .work-card-info-container {
   padding: 10px;
 }
-.work-card-info-container > p {
+.work_p {
   font-family: "proxima nova";
-    font-weight: 700;
-  font-size: 1.2rem;
+  font-weight: 700;
   text-align: center;
+  margin: 1.5rem 0;
 }
-@media (max-width: 480px) {
+.work_ul {
+ 
+  li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+  }
+}
+.work_ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: var(--text1); /* Color azul, puedes cambiarlo */
+  border-radius: 2px; /* Para esquinas ligeramente redondeadas */
+}
+@media (max-width: 780px) {
   .work-cards-section {
     width: 90%;
   }
@@ -75,22 +92,22 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    align-items: center;
   }
   .work-card-img-container {
     height: 200px;
   }
   .work-card-title-container > p {
-    font-size: 1.2em;
     height: auto;
     padding-bottom: 10px;
   }
   .work-card-info-container > p {
-    font-size: 1em;
     padding: 10px;
   }
   .work-card-item-container {
     box-shadow: 1px 1px 3px 1px gray;
     border-radius: 5px;
+    width: 100%;
   }
 }
 @media (min-width: 481px) and (max-width: 1279px) {
@@ -99,23 +116,10 @@
     padding-bottom: 60px;
   }
   .work-cards-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 4%;
+    gap: 2rem;
   }
   .work-card-img-container {
     height: 200px;
-  }
-  .work-card-img-container > img {
-    max-width: 175%;
-  }
-  .work-card-title-container > p {
-    font-size: 1.2em;
-    padding-bottom: 10px;
-  }
-  .work-card-info-container > p {
-    font-size: 1em;
-    padding: 10px;
   }
   .work-card-item-container {
     box-shadow: 1px 1px 3px 1px gray;

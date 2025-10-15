@@ -1,7 +1,7 @@
-import foto1 from "../assets/empleabilidad3.avif"
+import foto1 from "../assets/empleabilidad3.avif";
 import foto3 from "../assets/empleabilidad1.avif";
 import foto2 from "../assets/orobal1.avif";
-import zoddak from "../assets/zoddak.avif"
+import zoddak from "../assets/zoddak.avif";
 
 const experiencia = [
     {
