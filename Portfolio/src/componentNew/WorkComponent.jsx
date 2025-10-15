@@ -20,13 +20,13 @@ export const WorkComponent = () => {
               <img loading="lazy" src={objeto.imagen} alt={objeto.alt} />
             </div>
             <div className="work-card-title-container">
-              <p>{objeto.titulo}</p>
+              <p>{objeto.titulo_es}</p>
             </div>
             <div className="work-card-info-container">
-              <p className="work_p">{objeto.descripcion}</p>
-              {objeto.descripcion_2 ? (
+              <p className="work_p">{objeto.descripcion_es}</p>
+              {objeto.descripcion_2_es ? (
                 <ul className="work_ul">
-                  {objeto.descripcion_2.map((e, i) => (
+                  {objeto.descripcion_2_es.map((e, i) => (
                     <li key={i}>
                       <p>{e}</p>
                     </li>
@@ -35,7 +35,7 @@ export const WorkComponent = () => {
               ) : (
                 ""
               )}
-              {objeto.descripcion_3 ? <p className="work_p">{objeto.descripcion_3}</p> : ""}
+              {objeto.descripcion_3_es ? <p className="work_p">{objeto.descripcion_3_es}</p> : ""}
               <p className="work_p">{objeto.fecha}</p>
             </div>
           </div>

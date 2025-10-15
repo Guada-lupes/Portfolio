@@ -12,7 +12,7 @@ export const StudiesComponent = () => {
     <>
       <section className="cards-section">
         <TitlesComponent
-          texto={"Formación específica"}
+          texto={true ? "Formación específica": "Specific Training"}
           class_name={"studies_title"}
         />
         <div className="card-especific-container">
@@ -39,7 +39,7 @@ export const StudiesComponent = () => {
           ))}
         </div>
         <TitlesComponent
-          texto={"Formación académica"}
+          texto={true ? "Formación académica" : "Academic Education"}
           class_name={"studies_title"}
         />
         <div className="card-especific-container">
