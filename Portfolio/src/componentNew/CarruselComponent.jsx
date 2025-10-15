@@ -102,10 +102,10 @@ export const CarruselComponent = () => {
                   )}
                 </div>
                 <div className="carrusel-info-container">
-                  <p>{objeto.descripcion}</p>
-                  {objeto.funcionalidades ? (
+                  <p>{objeto.descripcion_es}</p>
+                  {objeto.funcionalidades_es ? (
                     <ul className="carrusel_ul">
-                      {objeto.funcionalidades.map((e, i) => (
+                      {objeto.funcionalidades_es.map((e, i) => (
                         <li key={i}>
                           <p>{e}</p>
                         </li>

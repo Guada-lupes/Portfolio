@@ -19,6 +19,8 @@ import "../styleNew/IconosComponentStyle.css";
 import { gsap } from "gsap";
 
 export const IconosComponent = () => {
+const titulos_es= ["Proyectos Web-Dev", "Formación", "Tecnologías", "Experiencia Profesional", "Otros proyectos"]
+const tiutlos_en = ["Web Dev Projects", "Education", "Technologies", "Professional Experience", "Other Projects"]
 
   useEffect(() => {
     gsap.to(".imagen", {

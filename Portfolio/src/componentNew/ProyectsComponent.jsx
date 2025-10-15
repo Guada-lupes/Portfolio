@@ -7,11 +7,12 @@ import BackButton from "./BackButton";
 
 export const ProyectsComponent = () => {
   const data = proyectosData();
+  const titulo = true ? "Desarrollos Web" : "Web Developments"
 
   return (
     <>
       <TitlesComponent
-        texto={"Desarrollos Web"}
+        texto={titulo}
         class_name={"desarrollos_title"}
       />
       <CarruselComponent />

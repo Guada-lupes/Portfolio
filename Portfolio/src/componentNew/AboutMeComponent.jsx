@@ -6,6 +6,7 @@ import "../styleNew/AboutMeComponentStyle.css";
 import BackButton from "./BackButton";
 
 export const AboutMeComponent = () => {
+  const titulo = true ? "Hola, soy Guadalupe Marándola" : "Hello, I'm Guadalupe Marándola"
   return (
     <section className="about-section">
       <div className="about-container">
@@ -23,16 +24,17 @@ export const AboutMeComponent = () => {
         </div>
         <article className="about-article">
           <TitlesComponent
-            texto={"Hola, soy Guadalupe Marándola"}
+            texto={titulo}
             class_name={"article-h2"}
           />
+          ({" "}
           <p className="article-p">
             Tras una formación intensiva en desarrollo web continué aprendiendo
             de forma autónoma, diseñando y creando mis propios proyectos. Esto
             me ha permitido consolidar una base sólida en{" "}
             <span>JavaScript</span>, <span>ES6</span>, <span>CSS moderno</span>{" "}
-            y <span>React</span>. Actualmente estoy profundizando en testing con <span>Jest</span>,
-              explorando <span>Next.js</span> para la creación
+            y <span>React</span>. Actualmente estoy profundizando en testing con{" "}
+            <span>Jest</span>, explorando <span>Next.js</span> para la creación
             de páginas estáticas de alto rendimiento y utilizando{" "}
             <span>TypeScript</span> para escribir un código más claro y
             mantenible.
@@ -45,6 +47,25 @@ export const AboutMeComponent = () => {
             creatividad, mi interés en la usabilidad y mi compromiso con el
             aprendizaje continuo.
           </p>
+          ) (
+          <p className="article-p">
+            After intensive training in web development, I continued learning
+            independently, designing and creating my own projects. This has
+            allowed me to build a solid foundation in <span>JavaScript</span>,{" "}
+            <span>ES6</span>, <span>modern CSS</span>, and <span>React</span>.
+            I’m currently deepening my knowledge of testing with{" "}
+            <span>Jest</span>, exploring <span>Next.js</span> for building
+            high-performance static pages, and using <span>TypeScript</span> to
+            write clearer and more maintainable code.
+          </p>
+          <p className="article-p">
+            My background in the education sector has given me highly valuable
+            transferable skills for web development: the ability to communicate
+            clearly, plan effectively, and design accessible, intuitive
+            experiences. I’m also known for my creativity, focus on usability,
+            and commitment to continuous learning.
+          </p>
+          )
         </article>
       </div>
       <BackButton />
