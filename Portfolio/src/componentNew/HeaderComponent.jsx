@@ -10,6 +10,9 @@ import { SplitText } from "gsap/SplitText";
 export const HeaderComponent = () => {
   const location = useLocation();
   const url = location.pathname;
+  const subtitle = true ? "Desarrollo Web + Educación" : "Web Development and Education"
+  const index_es = ["Inicio", "Sobre mi", "Contacto"]
+  const index_en = ["Home", "About Me", "Contact"]
 
   useLayoutEffect(() => {
     document.fonts.ready.then(() => {
@@ -51,7 +54,7 @@ export const HeaderComponent = () => {
             Guadalupe Marándola
           </h1>
         </Link>
-        <p>Desarrollo Web + Educación</p>
+        <p>{subtitle}</p>
       </div>
       {/* navegador para escritorio */}
       <div className="header-nav-container">

@@ -5,7 +5,7 @@ const formacion = [
     alt: "logo de la academia",
     titulo_es: "Grado en Pedagogía",
     titulo_en: "Bachelor’s Degree in Pedagogy",
-    descripcion: "2020",
+    descripcion_es: "2020",
     em:"UNED",
 },
 {
@@ -14,7 +14,7 @@ const formacion = [
     alt: "logo de la academia",
     titulo_es: "Máster en Formación del profesorado",
     titulo_en: "Master’s Degree in Teacher Training",
-    descripcion: "2022",
+    descripcion_es: "2022",
     em:"UNED",
 },
 // {
@@ -32,7 +32,7 @@ const formacionEspecifica = [
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbjtb2yk4262Y5bu2gPjTHYKjry-hWf1m9Eg&s",
     id:1,
     alt: "logo de la academia",
-    titulo: "Bootcamp Her-Tech Front End Development",
+    titulo_es: "Bootcamp Her-Tech Front End Development",
     descripcion_es: "Participé en un bootcamp de desarrollo web con un enfoque 100% práctico, donde adquirí conocimientos y experiencia en:",
     aprendizajes_es: ["Fundamentos de programación y JavaScript avanzado: manipulación del DOM, peticiones CRUD a API REST y gestión de estado con useReducer y useContext.", "Frontend: HTML5, CSS3 avanzado, SASS, diseño responsivo, validación de formularios, componentes reutilizables y buenas prácticas de código.", "Frameworks y librerías: React, Vite.", "Backend básico: introducción a Node.js.", "Diseño UI/UX: prototipado y diseño en Figma, centrado en la experiencia del usuario."],
     em:"Code Space Academy",

@@ -22,12 +22,12 @@ export const StudiesComponent = () => {
                 <img loading="lazy" src={objeto.imagen} alt={objeto.alt} />
               </div>
               <div className="car-especific-content">
-                <p className="car-especific-title">{objeto.titulo}</p>
+                <p className="car-especific-title">{objeto.titulo_es}</p>
                 <p className="car-especific-aprendizajes">
-                  {objeto.descripcion}
+                  {objeto.descripcion_es}
                 </p>
                     <ul className="studies_ul">
-                      {objeto.aprendizajes.map((e, i) => (
+                      {objeto.aprendizajes_es.map((e, i) => (
                         <li key={i}>
                           <p>{e}</p>
                         </li>
@@ -50,10 +50,10 @@ export const StudiesComponent = () => {
                   <img loading="lazy" src={objeto.imagen} alt={objeto.alt} />
                 </div>
                 <div className="card-title-container">
-                  <p>{objeto.titulo}</p>
+                  <p>{objeto.titulo_es}</p>
                 </div>
                 <div className="card-info-container">
-                  <p>{objeto.descripcion}</p>
+                  <p>{objeto.descripcion_es}</p>
                 </div>
               </div>
             ))}
