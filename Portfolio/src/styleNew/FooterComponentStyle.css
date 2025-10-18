@@ -11,7 +11,7 @@
 .mi-creacion {
   padding: 20px 0px;
   font-family: "proxima nova";
-    font-weight: 700;
+  font-weight: 700;
   text-align: center;
   color: #858e99;
 }
@@ -28,7 +28,7 @@
   flex-direction: column;
   justify-content: center;
   font-family: "proxima nova";
-    font-weight: 700;
+  font-weight: 700;
 }
 .privacy-content > p {
   line-height: 1.7em;
@@ -37,7 +37,6 @@
 }
 .footer-icon:hover {
   cursor: pointer;
-  font-weight: 900;
 }
 .footer-icon {
   color: var(--text1);
