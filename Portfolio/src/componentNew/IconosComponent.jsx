@@ -4,6 +4,7 @@ import foto2 from "../assets/ordenador.avif";
 import foto3 from "../assets/caja.avif";
 import foto4 from "../assets/libro.avif";
 import foto5 from "../assets/herramientas.avif";
+import { useTheme } from "../contex/ThemeProvider";
 import ordenadorResponsive from "../assets/ordenador_300.avif";
 import obreraResponsive from "../assets/obrera_300.avif";
 import libroResponsive from "../assets/libro_300.avif";
@@ -19,8 +20,9 @@ import "../styleNew/IconosComponentStyle.css";
 import { gsap } from "gsap";
 
 export const IconosComponent = () => {
+const {language} = useTheme();
 const titulos_es= ["Proyectos Web-Dev", "Formación", "Tecnologías", "Experiencia Profesional", "Otros proyectos"]
-const tiutlos_en = ["Web Dev Projects", "Education", "Technologies", "Professional Experience", "Other Projects"]
+const titulos_en = ["Web Dev Projects", "Education", "Technologies", "Professional Experience", "Other Projects"]
 
   useEffect(() => {
     gsap.to(".imagen", {
@@ -48,7 +50,7 @@ const tiutlos_en = ["Web Dev Projects", "Education", "Technologies", "Profession
             />
           </Link>
           <Link className="item-p" to="/proyects">
-            <p>Proyectos Web-Dev</p>
+            <p>{language ? titulos_es[0] : titulos_en[0]}</p>
           </Link>
         </div>
         <div className="icono-item">
@@ -64,7 +66,7 @@ const tiutlos_en = ["Web Dev Projects", "Education", "Technologies", "Profession
             />
           </Link>
           <Link to="/studies" className="item-p">
-            <p>Formación</p>
+            <p>{language ? titulos_es[1] : titulos_en[1]}</p>
           </Link>
         </div>
         <div className="icono-item">
@@ -80,7 +82,7 @@ const tiutlos_en = ["Web Dev Projects", "Education", "Technologies", "Profession
             />
           </Link>
           <Link to="/work" className="item-p">
-            <p>Tecnologías</p>
+            <p>{language ? titulos_es[2] : titulos_en[2]}</p>
           </Link>
         </div>
         <div className="icono-item">
@@ -96,7 +98,7 @@ const tiutlos_en = ["Web Dev Projects", "Education", "Technologies", "Profession
             />
           </Link>
           <Link to="/work" className="item-p">
-            <p>Experiencia Profesional</p>
+            <p>{language ? titulos_es[3] : titulos_en[3]}</p>
           </Link>
         </div>
         <div className="icono-item">
@@ -112,7 +114,7 @@ const tiutlos_en = ["Web Dev Projects", "Education", "Technologies", "Profession
             />
           </Link>
           <Link to="/others" className="item-p">
-            <p>Otros proyectos</p>
+            <p>{language ? titulos_es[4] : titulos_en[4]}</p>
           </Link>
         </div>
       </div>

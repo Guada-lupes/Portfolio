@@ -7,13 +7,11 @@ const {setLanguage, language} = useTheme();
 function setEs() {
     if(language != true){
         setLanguage(true)
-        window.location.reload();
     }
 }
 function setEn() {
         if(language != false){
         setLanguage(false)
-        window.location.reload();
     }
 }
 const pStyles = {color: "grey", cursor: "pointer"}

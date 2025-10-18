@@ -8,7 +8,7 @@ import BackButton from "./BackButton";
 
 export const AboutMeComponent = () => {
   const { language } = useTheme();
-  const titulo = true
+  const titulo = language
     ? "Hola, soy Guadalupe Marándola"
     : "Hello, I'm Guadalupe Marándola";
   return (

@@ -4,8 +4,8 @@ import { useTheme } from "../contex/ThemeProvider";
 import TitlesComponent from "./TitlesComponenet";
 
 export const ContactComponent = () => {
-  const titulo = true ? "Contáctame" : "Contact me";
   const { language } = useTheme();
+  const titulo = language ? "Contáctame" : "Contact me";
   return (
     <section className="contact-section">
       <div className="contact-container">

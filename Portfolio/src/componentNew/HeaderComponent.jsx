@@ -3,14 +3,16 @@ import { useEffect, useLayoutEffect } from "react";
 import { Link } from "react-router-dom";
 import "../styleNew/HeaderComponentStyle.css";
 import { useLocation } from "react-router-dom";
+import { useTheme } from "../contex/ThemeProvider";
 import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";
 import LanguageComponent from "./LanguageComponent";
 
 export const HeaderComponent = () => {
+  const {language} = useTheme();
   const location = useLocation();
   const url = location.pathname;
-  const subtitle = true ? "Desarrollo Web + Educación" : "Web Development and Education"
+  const subtitle = language ? "Desarrollo Web + Educación" : "Web Development and Education"
   const index_es = ["Inicio", "Sobre mi", "Contacto"]
   const index_en = ["Home", "About Me", "Contact"]
 
@@ -62,7 +64,7 @@ export const HeaderComponent = () => {
           <ul className="header-nav-ul">
             <li>
               <Link to="/" className={url === "/" ? "titles-checked" : ""}>
-                Inicio
+                {language ? index_es[0] : index_en[0]}
               </Link>
             </li>
             <li>
@@ -70,7 +72,7 @@ export const HeaderComponent = () => {
                 to="/aboutme"
                 className={url === "/aboutme" ? "titles-checked" : ""}
               >
-                Sobre mi
+                {language ? index_es[1] : index_en[1]}
               </Link>
             </li>
             <li>
@@ -78,7 +80,7 @@ export const HeaderComponent = () => {
                 to="/contact"
                 className={url === "/contact" ? "titles-checked" : ""}
               >
-                Contacto
+                {language ? index_es[2] : index_en[2]}
               </Link>
             </li>
           </ul>

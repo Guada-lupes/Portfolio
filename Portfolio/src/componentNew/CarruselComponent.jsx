@@ -1,16 +1,19 @@
 import React, { useEffect } from "react";
 import { useState, useRef } from "react";
+import { useTheme } from "../contex/ThemeProvider";
 import { GitHubLogoPath } from "./GitHubLogoPath";
 import { proyectosData } from "../service/proyectos";
 import { VideoComponent } from "./VideoComponent";
 import "../styleNew/CarruselComponentStyle.css";
 
 export const CarruselComponent = () => {
+  const {language} = useTheme();
   const data = proyectosData();
+  const dataL = language ? data.es : data.en;
   const [currentPosition, setCurrentPosition] = useState(1);
   const [translate, setTranslate] = useState(0);
   const [measure, setMeasure] = useState({ left: 0, right: 0, width: 0 });
-  const lastPage = data.length;
+  const lastPage = dataL.length;
   const sizeContainer = useRef(null);
   //lógica para posición de los botones
   useEffect(() => {
@@ -30,7 +33,7 @@ export const CarruselComponent = () => {
   }
   //handles de los botones
   function handleNext() {
-    if (currentPosition < data.length) {
+    if (currentPosition < lastPage) {
       const actualized = currentPosition + 1;
       const actualizedT = translate + 100 / lastPage;
       setCurrentPosition(actualized);
@@ -87,7 +90,7 @@ export const CarruselComponent = () => {
             transform: `translateX(-${translate}%)`,
           }}
         >
-          {data.map((objeto, index) => (
+          {dataL.map((objeto, index) => (
             <div
               className={"carrusel-item-container"}
               key={index}
@@ -102,10 +105,10 @@ export const CarruselComponent = () => {
                   )}
                 </div>
                 <div className="carrusel-info-container">
-                  <p>{objeto.descripcion_es}</p>
-                  {objeto.funcionalidades_es ? (
+                  <p>{objeto.descripcion}</p>
+                  {objeto.funcionalidades ? (
                     <ul className="carrusel_ul">
-                      {objeto.funcionalidades_es.map((e, i) => (
+                      {objeto.funcionalidades.map((e, i) => (
                         <li key={i}>
                           <p>{e}</p>
                         </li>

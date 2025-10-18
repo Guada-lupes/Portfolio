@@ -1,16 +1,18 @@
 import React from "react";
 import { experienciaData } from "../service/experiencia";
 import "../styleNew/WorkComponentStyle.css";
+import { useTheme } from "../contex/ThemeProvider";
 import TitlesComponent from "./TitlesComponenet";
 import BackButton from "./BackButton";
 
 export const WorkComponent = () => {
-  const data = experienciaData();
+    const {language} = useTheme();
+  const data = language ? experienciaData().es : experienciaData().en;
 
   return (
     <section className="work-cards-section">
       <TitlesComponent
-        texto={"Experiencia laboral"}
+        texto={language ? "Experiencia laboral" : "Professional Experience"}
         class_name={"work_title"}
       />
       <div className="work-cards-container">
@@ -20,13 +22,13 @@ export const WorkComponent = () => {
               <img loading="lazy" src={objeto.imagen} alt={objeto.alt} />
             </div>
             <div className="work-card-title-container">
-              <p>{objeto.titulo_es}</p>
+              <p>{objeto.titulo}</p>
             </div>
             <div className="work-card-info-container">
-              <p className="work_p">{objeto.descripcion_es}</p>
-              {objeto.descripcion_2_es ? (
+              <p className="work_p">{objeto.descripcion}</p>
+              {objeto.descripcion_2 ? (
                 <ul className="work_ul">
-                  {objeto.descripcion_2_es.map((e, i) => (
+                  {objeto.descripcion_2.map((e, i) => (
                     <li key={i}>
                       <p>{e}</p>
                     </li>
@@ -35,7 +37,7 @@ export const WorkComponent = () => {
               ) : (
                 ""
               )}
-              {objeto.descripcion_3_es ? <p className="work_p">{objeto.descripcion_3_es}</p> : ""}
+              {objeto.descripcion_3 ? <p className="work_p">{objeto.descripcion_3}</p> : ""}
               <p className="work_p">{objeto.fecha}</p>
             </div>
           </div>
