@@ -14,12 +14,14 @@ function setEn() {
         setLanguage(false)
     }
 }
-const pStyles = {color: "grey", cursor: "pointer"}
+const pStyles = {color: "grey", cursor: "pointer", focus: {textDecoration: "underline"}}
+const pStylesFocus = {color: "grey", cursor: "pointer", textDecoration: "underline"}
+
     return (
         <div style={{display: "flex", flexDirection: "row", gap: "1rem", alignItems: "center", position: "absolute",
     justifySelf: "end", top: "1rem"}}>
-            <p style={pStyles} onClick={setEs}>ES</p>
-            <p style={pStyles}  onClick={setEn}>EN</p>
+            <p style={language ?  pStylesFocus: pStyles} onClick={setEs}>ES</p>
+            <p style={language ? pStyles : pStylesFocus }  onClick={setEn}>EN</p>
             <ToggleThemeComponent/>
         </div>
     );

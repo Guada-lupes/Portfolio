@@ -12,7 +12,7 @@ export const HeaderComponent = () => {
   const {language} = useTheme();
   const location = useLocation();
   const url = location.pathname;
-  const subtitle = language ? "Desarrollo Web + Educación" : "Web Development and Education"
+  const subtitle = language ? "Desarrollo Web + Educación" : "Web Development + Education"
   const index_es = ["Inicio", "Sobre mi", "Contacto"]
   const index_en = ["Home", "About Me", "Contact"]
 
