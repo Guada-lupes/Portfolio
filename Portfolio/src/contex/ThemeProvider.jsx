@@ -8,6 +8,7 @@ export const ThemeProvider = ({children}) => {
     const [language, setLanguage] = useState(true)
     useEffect(()=>{
         document.documentElement.setAttribute("data-theme", theme)
+        localStorage.setItem({"theme": `${theme}`})
     }, [theme])
 const toggleTheme = () => {
     setTheme((prev)=> prev === "dark" ? "light" : "dark")

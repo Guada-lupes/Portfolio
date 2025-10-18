@@ -3,9 +3,9 @@ import { useEffect, useLayoutEffect } from "react";
 import { Link } from "react-router-dom";
 import "../styleNew/HeaderComponentStyle.css";
 import { useLocation } from "react-router-dom";
-import { ToggleThemeComponent } from "./ToggleThemeComponent";
 import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";
+import LanguageComponent from "./LanguageComponent";
 
 export const HeaderComponent = () => {
   const location = useLocation();
@@ -46,7 +46,7 @@ export const HeaderComponent = () => {
 
   return (
     <header className="header">
-      <ToggleThemeComponent />
+      <LanguageComponent />
       <div className="header-info">
         <Link to="/">
           <h1 id="compatibility" className="name_title">

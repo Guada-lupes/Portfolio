@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "../styleNew/FooterComponentStyle.css";
+import { useTheme } from "../contex/ThemeProvider";
 
 export const FooterComponent = () => {
+  const {language} = useTheme();
   const [open, setOpen] = useState(false);
   function openPolicy(params) {
     setOpen(true);
@@ -20,18 +22,18 @@ export const FooterComponent = () => {
         </a>
       </div>
       <div onClick={openPolicy} className="footer-privacy footer-icon">
-        {true ? "Politica de privacidad" : "Privacy policy"}
+        {language ? "Politica de privacidad" : "Privacy policy"}
       </div>
       <div className="mi-creacion">
-        {true
+        {language
           ? "Web creada por Guadalupe Marándola"
           : "Created by Guadalupe Marándola"}
       </div>
       {open && (
         <div className="privacy-container" onClick={() => setOpen(false)}>
           <div className="privacy-content" onClick={(e) => e.stopPropagation()}>
-            <h2>{true ? "Politica de privacidad" : "Privacy policy"}</h2>({" "}
-            <p>
+            <h2>{true ? "Politica de privacidad" : "Privacy policy"}</h2>
+            {language ? (<p>
               Este sitio web recopila información personal únicamente a través
               del formulario de contacto, con el único fin de responder a las
               consultas recibidas. - Datos recopilados: nombre, correo
@@ -45,9 +47,7 @@ export const FooterComponent = () => {
               tiempo necesario para atender la consulta. - Derechos: puedes
               solicitar la eliminación de tus datos escribiéndome directamente
               al correo proporcionado en este sitio.
-            </p>
-            ) (
-            <p>
+            </p>) : (<p>
               This website collects personal information only through the
               contact form, solely for the purpose of responding to inquiries
               received. - Data collected: name, email address, and any message
@@ -60,8 +60,7 @@ export const FooterComponent = () => {
               as necessary to handle the inquiry. - Rights: you may request the
               deletion of your data by writing directly to the email provided on
               this site.
-            </p>
-            )
+            </p>)}
           </div>
         </div>
       )}

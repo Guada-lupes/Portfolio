@@ -1,3 +1,6 @@
+.header-info{
+  padding-top: 1rem;
+}
 .name_title {
   font-size: clamp(0.9rem, 5vw, 4.4rem);
   letter-spacing: 0.138889em;
