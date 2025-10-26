@@ -101,7 +101,7 @@ const titulos_en = ["Web Dev Projects", "Education", "Technologies", "Profession
             <p>{language ? titulos_es[3] : titulos_en[3]}</p>
           </Link>
         </div>
-        <div className="icono-item">
+        {/* <div className="icono-item">
           <Link className="item-img" to="/others">
             <img
               className="imagen"
@@ -116,7 +116,7 @@ const titulos_en = ["Web Dev Projects", "Education", "Technologies", "Profession
           <Link to="/others" className="item-p">
             <p>{language ? titulos_es[4] : titulos_en[4]}</p>
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );
