@@ -42,12 +42,11 @@ export const AboutMeComponent = () => {
                 escribir un código más claro y mantenible.
               </p>
               <p className="article-p">
-                Mi trayectoria en el sector educativo me ha brindado habilidades
-                transferibles muy valiosas para el desarrollo web: la capacidad
-                de comunicar con claridad, planificar con eficacia y diseñar
-                experiencias accesibles e intuitivas. Además, me caracterizo por
-                mi creatividad, mi interés en la usabilidad y mi compromiso con
-                el aprendizaje continuo.
+                Mi objetivo profesional es ntegrar mi experiencia pedagógica y
+                tecnológica en proyectos de tecnología educativa, diseño
+                instruccional, desarrollo de contenidos digitales o formación
+                corporativa, contribuyendo a la creación de experiencias de
+                aprendizaje significativas, inclusivas y atractivas.
               </p>
             </>
           ) : (
@@ -64,11 +63,11 @@ export const AboutMeComponent = () => {
                 and more maintainable code.
               </p>
               <p className="article-p">
-                My background in the education sector has given me highly
-                valuable transferable skills for web development: the ability to
-                communicate clearly, plan effectively, and design accessible,
-                intuitive experiences. I’m also known for my creativity, focus
-                on usability, and commitment to continuous learning.
+                My professional goal is to integrate my pedagogical and
+                technological experience into projects in educational
+                technology, instructional design, digital content development,
+                or corporate training, contributing to the creation of
+                meaningful, inclusive, and engaging learning experiences.
               </p>
             </>
           )}
