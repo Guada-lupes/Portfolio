@@ -42,7 +42,7 @@ export const AboutMeComponent = () => {
                 escribir un código más claro y mantenible.
               </p>
               <p className="article-p">
-                Mi objetivo profesional es ntegrar mi experiencia pedagógica y
+                Mi objetivo profesional es integrar mi experiencia pedagógica y
                 tecnológica en proyectos de tecnología educativa, diseño
                 instruccional, desarrollo de contenidos digitales o formación
                 corporativa, contribuyendo a la creación de experiencias de
