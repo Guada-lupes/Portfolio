@@ -3,8 +3,8 @@ import planeta1 from "../assets/planeta.mp4";
 import catalogo1 from "../assets/catalogo.mp4";
 import catalogo2 from "../assets/catalogo.webm";
 import foto3 from "../assets/BookSpace.png";
-import asistente1 from "../assets/AsistenteVirtual.webm";
-import asistente2   from "../assets/AsistenteVirtual.mp4";
+import asistente1 from "../assets/AsistenteVirtual.webp";
+import asistente2   from "../assets/AsistenteVirtual.png";
 
 
 const proyectos = {
