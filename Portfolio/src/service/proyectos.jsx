@@ -3,9 +3,30 @@ import planeta1 from "../assets/planeta.mp4";
 import catalogo1 from "../assets/catalogo.mp4";
 import catalogo2 from "../assets/catalogo.webm";
 import foto3 from "../assets/BookSpace.png";
+import asistente1 from "../assets/AsistenteVirtual.webm";
+import asistente2   from "../assets/AsistenteVirtual.mp4";
+
 
 const proyectos = {
   es: [
+        {
+      // video_id: "5WGMRXzbcUA",
+      imagen: asistente2,
+      imagen_dos: asistente1,
+      id: 1,
+      alt: "imagen del proyecto",
+      titulo: "Asistente Virtual CloudNote Pro",
+      descripcion:
+        "Asistente virtual inteligente de soporte técnico construido con React, TypeScript y LangChain. Este proyecto es una práctica educativa que simula un sistema de soporte automatizado para CloudNote Pro, una aplicación ficticia de toma de notas:",
+      funcionalidades: [
+        "Clasificación híbrida (reglas + LLM) para filtrar consultas fuera de dominio y redirigir a recursos adecuados.",
+        "Memoria conversacional que mantiene el contexto de la interacción del usuario para respuestas coherentes.",
+        "Integración con Groq (modelo llama-3.1-8b-instant) para generación de respuestas naturales y precisas.",
+        "Respuestas contextualizadas basadas en el historial de conversación",
+      ],
+      stack: "",
+      em: "https://github.com/Guada-lupes/Chatbot",
+    },
     {
       video_id: "5WGMRXzbcUA",
       imagen: planeta2,
